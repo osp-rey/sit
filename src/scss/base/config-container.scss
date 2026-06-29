@@ -1,0 +1,31 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.g-wrap {
+  position: relative;
+  width: 1890px;
+  max-width: calc(100% - 28px);
+  margin: 0 auto;
+  padding: 0 30px;
+  overflow: hidden;
+  z-index: 1;
+
+  @include laptop-min {
+    padding: 0 20px;
+    max-width: calc(100% - 8px);
+  }
+  @include tablet-min {
+    padding: 0 15px;
+  }
+}
+
+.container {
+  --content-width: 1735px;
+  --offset-width: 0px;
+  --container-width: calc(var(--content-width) + (var(--offset-width) * 2));
+
+  max-width: var(--container-width);
+  width: 100%;
+  padding: 0 var(--offset-width);
+  margin: 0 auto;
+}

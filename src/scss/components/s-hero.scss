@@ -1,0 +1,85 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-hero {
+  &__body {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    min-height: 825px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(188deg, #415a74 0%, #232429 100%);
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 1;
+    @include desktop {
+      min-height: auto;
+    }
+    @include laptop-min {
+      padding-top: 35px;
+      padding-bottom: 35px;
+      border-radius: 12px;
+    }
+    @include tablet-min {
+      padding-top: 275px;
+      padding-bottom: 30px;
+    }
+  }
+  &__picture {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+    @include tablet-min {
+      top: -125px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    img {
+      display: block;
+      max-width: none;
+    }
+  }
+  &__info {
+    max-width: 780px;
+    @include laptop-min {
+      max-width: 450px;
+    }
+    @include tablet {
+      max-width: 405px;
+    }
+  }
+  &__title {
+  }
+  &__content {
+    max-width: 735px;
+    font-size: 26px;
+    line-height: 140%;
+    margin: 20px 0px 0px 0px;
+    @include laptop-min {
+      font-size: 18px;
+    }
+    @include tablet {
+      font-size: 15px;
+      line-height: 140%;
+      margin-top: 10px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 45px;
+    @include laptop-min {
+      margin-top: 30px;
+    }
+    @include tablet {
+      margin-top: 20px;
+      gap: 6px;
+    }
+  }
+}

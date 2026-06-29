@@ -1,0 +1,28 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.b-title {
+  font-weight: 600;
+  font-size: 90px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  margin: 0;
+
+  @include desktop {
+    font-size: 80px;
+  }
+  @include laptop {
+    font-size: 60px;
+  }
+  @include laptop-min {
+    font-size: 50px;
+  }
+  @include tablet {
+    font-size: 40px;
+    line-height: 110%;
+  }
+  @include tablet-min {
+    font-size: 35px;
+    line-height: 100%;
+  }
+}
