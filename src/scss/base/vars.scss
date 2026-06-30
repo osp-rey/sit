@@ -1,3 +1,6 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
 :root {
   --dark: #1f262e;
   --dark-6: rgba(31, 38, 46, 0.6);
@@ -5,9 +8,15 @@
   --dark-4: rgba(31, 38, 46, 0.4);
   --dark-3: rgba(31, 38, 46, 0.3);
   --dark-2: rgba(31, 38, 46, 0.2);
+  --dark-03: rgba(31, 38, 46, 0.03);
 
   --primary: #ff8300;
   --ghost: #f7f8f9;
 
   --white-1: rgba(255, 255, 255, 0.1);
+
+  --radius: 20px;
+  @include laptop-min {
+    --radius: 12px;
+  }
 }

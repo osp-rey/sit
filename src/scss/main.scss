@@ -11,10 +11,15 @@
 @use "./ui/list";
 @use "./ui/title";
 @use "./ui/tab";
+@use "./ui/sect";
+@use "./ui/content-box";
+@use "./ui/slider";
 
 @use "./components/header";
 @use "./components/burger";
 
 @use "./components/s-hero";
+@use "./components/s-services";
+@use "./components/s-about";
 
 @use "./components/footer";

@@ -1,0 +1,32 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.g-wrap {
+  position: relative;
+  width: 1890px;
+  max-width: calc(100% - 28px);
+  margin: 0 auto;
+  padding: 80px 30px;
+  overflow: hidden;
+  border-radius: 20px;
+  z-index: 1;
+
+  @include laptop-min {
+    padding: 50px 20px;
+    max-width: calc(100% - 8px);
+    border-radius: 12px;
+  }
+  @include tablet-min {
+    padding: 0 15px;
+  }
+}
+.sect-m {
+  margin: 15px 0px;
+  @include tablet {
+    margin: 5px 0px;
+  }
+}
+
+.bg-dark-03 {
+  background-color: var(--dark-03);
+}

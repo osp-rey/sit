@@ -26,3 +26,38 @@
     line-height: 100%;
   }
 }
+.s-title {
+  font-weight: 500;
+  font-size: 67px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  margin: 0;
+
+  @include tablet {
+    font-size: 30px;
+  }
+
+  span {
+    background: linear-gradient(to bottom, transparent 12%, var(--dark) 12%);
+    padding: 0 5px;
+    color: white;
+  }
+}
+.l-title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  margin: 0;
+
+  @include laptop {
+    font-size: 26px;
+  }
+  @include tablet {
+    font-size: 20px;
+    line-height: 100%;
+  }
+  @include tablet-min {
+    font-size: 19px;
+  }
+}
