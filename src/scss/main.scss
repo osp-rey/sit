@@ -14,12 +14,16 @@
 @use "./ui/sect";
 @use "./ui/content-box";
 @use "./ui/slider";
+@use "./ui/form";
 
 @use "./components/header";
 @use "./components/burger";
+@use "./components/modals";
 
 @use "./components/s-hero";
 @use "./components/s-services";
 @use "./components/s-about";
+@use "./components/s-adv";
+@use "./components/s-products";
 
 @use "./components/footer";

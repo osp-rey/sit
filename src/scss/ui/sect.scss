@@ -17,7 +17,7 @@
     border-radius: 12px;
   }
   @include tablet-min {
-    padding: 0 15px;
+    padding: 50px 15px;
   }
 }
 .sect-m {
@@ -29,4 +29,11 @@
 
 .bg-dark-03 {
   background-color: var(--dark-03);
+}
+
+.sect-head {
+  margin-bottom: 40px;
+  @include laptop-min {
+    margin-bottom: 30px;
+  }
 }

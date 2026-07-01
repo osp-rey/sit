@@ -33,6 +33,12 @@
   letter-spacing: -0.03em;
   margin: 0;
 
+  @include desktop {
+    font-size: 58px;
+  }
+  @include laptop {
+    font-size: 44px;
+  }
   @include tablet {
     font-size: 30px;
   }

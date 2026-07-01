@@ -1,0 +1,89 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+.fancybox__backdrop {
+  background-color: var(--dark-6);
+  backdrop-filter: blur(10px);
+}
+.modal {
+  display: none;
+  padding: 35px;
+  border-radius: var(--radius);
+  width: 630px;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 40px 50px 0 rgba(0, 0, 0, 0.07);
+  background: rgba(242, 242, 242, 0.9);
+  cursor: auto;
+  max-width: 100%;
+
+  @include tablet {
+    padding: 25px;
+  }
+  @include tablet-min {
+    padding: 20px;
+  }
+
+  &__close {
+    @include flex-center;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: var(--dark-4);
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+
+    transition: color 0.3s ease;
+
+    @include hover {
+      color: var(--dark);
+    }
+    @include tablet {
+      border-radius: 8px;
+      top: 12px;
+      right: 12px;
+    }
+
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  &__body {
+    width: 100%;
+  }
+  &__head {
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    @include tablet {
+      font-size: 36px;
+    }
+    @include tablet-min {
+      font-size: 32px;
+    }
+  }
+  &__content {
+    font-size: 22px;
+    line-height: 150%;
+    margin: 8px 0px 0px 0px;
+    @include tablet {
+      font-size: 15px;
+      max-width: 340px;
+    }
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 20px;
+
+    .check-wrap {
+      margin-top: 5px;
+    }
+  }
+}

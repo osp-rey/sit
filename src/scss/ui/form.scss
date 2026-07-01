@@ -1,0 +1,113 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.form-control {
+  width: 100%;
+}
+
+.input {
+  --border: var(--dark-2);
+  --backround: white;
+  --color: var(--dark);
+  --placeholder: var(--dark);
+  --placeholder-f: var(--dark);
+  --border-f: var(--dark);
+  --backround-f: white;
+  --color-f: var(--dark);
+
+  outline: none;
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  background-color: var(--backround);
+  width: 100%;
+  padding: 20px 28px;
+  border-radius: 12px;
+
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: -0.01em;
+  color: var(--color);
+
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+  @include tablet {
+    font-size: 16px;
+    padding: 12px 20px;
+    
+    &::placeholder {
+      font-size: 15px;
+    }
+  }
+
+  &::placeholder {
+    color: var(--placeholder);
+    transition: color 0.3s ease;
+  }
+
+  &:focus {
+    background-color: var(--backround-f);
+    border-color: var(--border-f);
+    color: var(--color-f);
+    &::placeholder {
+      color: var(--placeholder-f);
+    }
+  }
+}
+
+.check-wrap {
+  input[type="checkbox"] {
+    display: none;
+  
+    &:checked + label {
+      &::before {
+        border-color: var(--border-a);
+        background: var(--url) center / 10px auto no-repeat;
+        background-color: var(--background-a);
+      }
+    }
+  }
+  label {
+    --color: var(--dark-5);
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    cursor: pointer;
+
+    color: var(--color);
+    font-size: 13px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+
+    a {
+      text-decoration: underline;
+      transition: color .3s ease;
+      @include hover {
+        color: var(--primary);
+      }
+    }
+
+    &::before {
+      --border: var(--dark-5);
+      --background: transparent;
+      --url: url("@img/check-white.svg");
+
+      --border-a: transparent;
+      --background-a: var(--dark-5);
+
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 6px;
+      flex-shrink: 0;
+      background-color: var(--background);
+      border: 1px solid var(--border);
+
+      transition:
+        border-color 0.3s ease,
+        background-color 0.3s ease;
+    }
+  }
+}

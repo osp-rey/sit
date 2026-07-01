@@ -5,9 +5,18 @@
     display: flex;
     align-items: start;
     gap: 10px;
+
+    @include laptop-middle {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
   }
   &__info {
     flex: 1;
+    @include laptop-middle {
+      flex: auto;
+      width: 100%;
+    }
   }
   &__title {
   }
@@ -15,6 +24,16 @@
     margin-top: 20px;
     font-size: 26px;
     line-height: 140%;
+    @include desktop {
+      font-size: 24px;
+    }
+    @include laptop {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 15px;
+      margin-top: 15px;
+    }
   }
   &__steps {
     display: grid;
@@ -22,7 +41,12 @@
     margin-top: 30px;
     gap: 40px;
     row-gap: 30px;
-    .item-step {
+    @include tablet {
+      gap: 10px;
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;
+      gap: 20px;
     }
     .item-num {
       position: relative;
@@ -33,6 +57,13 @@
       letter-spacing: -0.02em;
       color: var(--primary);
       z-index: 1;
+
+      @include laptop {
+        font-size: 55px;
+      }
+      @include tablet {
+        font-size: 40px;
+      }
 
       &::before {
         position: absolute;
@@ -45,12 +76,25 @@
         transform: translate(-50%, -50%);
         filter: blur(25px);
         z-index: -1;
+
+        @include tablet {
+          width: 15px;
+        }
       }
     }
     .item-text {
       font-size: 22px;
       line-height: 130%;
       color: var(--dark-5);
+      @include desktop {
+        font-size: 20px;
+      }
+      @include laptop {
+        font-size: 16px;
+      }
+      @include tablet {
+        font-size: 15px;
+      }
     }
   }
   &__btn {
@@ -62,12 +106,25 @@
     flex-shrink: 0;
     border-radius: 20px;
     overflow: hidden;
+    @include desktop {
+      width: 550px;
+    }
+    @include laptop-middle {
+      width: 100%;
+    }
+    @include tablet {
+      margin-top: 30px;
+    }
 
     .slider-nav {
       position: absolute;
       bottom: 15px;
       left: 15px;
       z-index: 10;
+      @include tablet {
+        left: 10px;
+        bottom: 10px;
+      }
     }
   }
   &__slider {
@@ -82,6 +139,9 @@
       img {
         transform: scale(1.08);
       }
+    }
+    @include laptop-middle {
+      aspect-ratio: 1/0.7;
     }
 
     img {
