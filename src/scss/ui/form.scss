@@ -3,6 +3,10 @@
 
 .form-control {
   width: 100%;
+
+  .just-validate-error-label {
+    display: none;
+  }
 }
 
 .input {
@@ -36,7 +40,7 @@
   @include tablet {
     font-size: 16px;
     padding: 12px 20px;
-    
+
     &::placeholder {
       font-size: 15px;
     }
@@ -55,17 +59,36 @@
       color: var(--placeholder-f);
     }
   }
+
+  &.just-validate-error-field {
+    --border: rgba(255, 64, 0, 0.3);
+    --backround: white;
+    --color: var(--red);
+    --placeholder: var(--red);
+    --placeholder-f: var(--red);
+    --border-f: rgba(255, 64, 0, 0.3);
+    --backround-f: white;
+    --color-f: var(--red);
+  }
 }
 
 .check-wrap {
   input[type="checkbox"] {
     display: none;
-  
+
     &:checked + label {
       &::before {
         border-color: var(--border-a);
         background: var(--url) center / 10px auto no-repeat;
         background-color: var(--background-a);
+      }
+    }
+
+    &.just-validate-error-field + label {
+      --color: var(--red);
+
+      &::before {
+        --border: var(--red)
       }
     }
   }
@@ -83,7 +106,7 @@
 
     a {
       text-decoration: underline;
-      transition: color .3s ease;
+      transition: color 0.3s ease;
       @include hover {
         color: var(--primary);
       }
@@ -109,5 +132,9 @@
         border-color 0.3s ease,
         background-color 0.3s ease;
     }
+  }
+
+  .just-validate-error-label {
+    display: none;
   }
 }

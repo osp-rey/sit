@@ -1,0 +1,71 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-products {
+  overflow: hidden;
+  &__wrap {
+    overflow: visible;
+  }
+  &__nav {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 35px;
+    @include laptop-min {
+      margin-top: 25px;
+    }
+  }
+  &__slider-nav {
+    margin: 0;
+    overflow: visible !important;
+
+    @media (min-width: 992px) {
+      .swiper-wrapper {
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+    }
+    .swiper-slide {
+      width: fit-content !important;
+    }
+  }
+  &__toggle {
+    display: flex;
+    flex-shrink: 0;
+    gap: 15px;
+    @include laptop-min {
+      display: none;
+    }
+  }
+  &__slider {
+    overflow: visible !important;
+    .swiper-slide {
+      box-sizing: border-box;
+      height: auto !important;
+      opacity: 0;
+
+      transition: opacity .3s ease;
+
+      @include tablet-middle {
+        width: 215px !important;
+        max-width: 100%;
+        opacity: 1;
+      }
+
+      &._visible {
+        opacity: 1;
+      }
+
+      .card-product {
+        height: 100%;
+      }
+    }
+  }
+  &__btn-all {
+    margin-top: 25px;
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+}

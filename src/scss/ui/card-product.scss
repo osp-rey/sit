@@ -1,0 +1,55 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.card-product {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  border: 1px solid var(--dark-2);
+  background-color: white;
+
+  transition: box-shadow 0.3s ease;
+  @include hover {
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.08);
+  }
+  @include laptop-min {
+    border-radius: 12px;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 30px;
+    @include desktop {
+      padding: 20px;
+    }
+    @include tablet {
+      padding: 12px 15px 15px 15px;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    @include laptop-middle {
+      font-size: 17px;
+    }
+  }
+  &__content {
+    line-height: 140%;
+    color: var(--dark-5);
+    margin-top: 5px;
+    @include laptop-middle {
+      font-size: 13px;
+    }
+  }
+}

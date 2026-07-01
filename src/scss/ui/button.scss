@@ -43,6 +43,56 @@
   }
 }
 
+.btn-m {
+  --background: transparent;
+  --border: var(--dark-2);
+  --color: var(--dark);
+  --background-h: var(--dark);
+  --border-h: var(--dark);
+  --color-h: white;
+
+  @include flex-center;
+  cursor: pointer;
+  width: fit-content;
+  outline: none;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 11px 18px;
+
+  color: var(--color);
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 160%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  user-select: none;
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+
+  @include tablet {
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 10px;
+  }
+  @include hover {
+    color: var(--color-h);
+    background-color: var(--background-h);
+    border-color: var(--border-h);
+  }
+
+  &._active {
+    pointer-events: none;
+    color: var(--color-h);
+    background-color: var(--background-h);
+    border-color: var(--border-h);
+  }
+}
+
 .btn-s {
   --background: var(--primary);
   --border: white;

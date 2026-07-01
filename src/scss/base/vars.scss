@@ -15,6 +15,8 @@
 
   --white-1: rgba(255, 255, 255, 0.1);
 
+  --red: #ff4000;
+
   --radius: 20px;
   @include laptop-min {
     --radius: 12px;
