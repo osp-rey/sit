@@ -7,6 +7,7 @@ import inputmask from "./functions/inputmask.js";
 import mediaAdaptive from "./functions/mediaAdaptive.js";
 import moreReviews from "./functions/moreReviews.js";
 import sliders from "./functions/sliders.js";
+import spollers from "./functions/spollers.js";
 import tab from "./functions/tab.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   formValid();
   inputmask();
   moreReviews();
+  spollers();
 
   Fancybox.bind("[data-fancybox]", { closeButton: false });
   // Fancybox.show([{ src: "#modal-feedback", type: "inline" }], {

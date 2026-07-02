@@ -1,0 +1,128 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-faq {
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 40px;
+    @include laptop-middle {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  &__info {
+    flex: 0 1 670px;
+    @include laptop-middle {
+      flex: auto;
+      width: 100%;
+    }
+  }
+  &__title {
+  }
+  &__content {
+    margin: 15px 0px 0px 0px;
+  }
+  &__btn {
+    margin-top: 30px;
+    @include laptop-middle {
+      display: none;
+    }
+  }
+  &__spollers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 0 1 860px;
+    @include laptop-middle {
+      flex: auto;
+      width: 100%;
+    }
+  }
+  &__spoller {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--ghost-2);
+    border: 1px solid var(--ghost-2);
+    gap: 30px;
+
+    transition:
+      border-color 0.3s ease,
+      background-color 0.3s ease;
+
+    &._active {
+      background-color: transparent;
+      border-color: var(--gray);
+
+      .s-faq__spoller-btn {
+        padding-top: 0;
+
+      }
+      .rect {
+        background-color: var(--ghost-2);
+        color: var(--dark-4);
+
+        &::before {
+          transform: rotate(0deg)
+        }
+      }
+    }
+
+    .rect {
+      @include flex-center;
+      position: relative;
+      background-color: white;
+      border-radius: 12px;
+      background-color: white;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      flex-shrink: 0;
+
+      color: var(--primary);
+
+      transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        background-color: currentColor;
+        width: 16px;
+        height: 2px;
+        transition: transform 0.3s ease;
+      }
+      &::before {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &__spoller-main {
+    flex: 0 1 705px;
+  }
+  &__spoller-btn {
+    cursor: pointer;
+    user-select: none;
+    padding: 10px 0px;
+    
+    transition: padding .3s ease;
+  }
+  &__spoller-body {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    color: var(--dark-6);
+  }
+  &__btn-mob {
+    @media (min-width: 1200px) {
+      display: none;
+    }
+  }
+}

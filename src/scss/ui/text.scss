@@ -11,6 +11,17 @@
     font-size: 15px;
   }
 }
+.text-m {
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: -0.03em;
+  @include laptop-middle {
+    font-size: 20px;
+  }
+  @include tablet {
+    font-size: 15px;
+  }
+}
 .text-l {
   font-size: 20px;
   line-height: 130%;

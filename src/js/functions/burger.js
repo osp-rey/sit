@@ -23,12 +23,14 @@ export default function burger() {
     function handleOpen() {
       document.body.classList.add("body-hidden");
       burger.classList.add("_open");
+      header.classList.add("_static");
 
       updateHeightBurger();
     }
     function handleClose() {
       document.body.classList.remove("body-hidden");
       burger.classList.remove("_open");
+      header.classList.remove("_static");
     }
 
     window.visualViewport.addEventListener("resize", updateHeightBurger);

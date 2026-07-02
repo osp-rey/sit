@@ -21,6 +21,15 @@
     transform: translateY(calc(-100% - 30px));
   }
 
+  &._static {
+    padding: 0 !important;
+    .header__inside {
+      backdrop-filter: none !important;
+      box-shadow: none !important;
+      background-color: white !important;
+    }
+  }
+
   &._fill,
   &._scroll {
     padding: 14px 0px;
@@ -30,7 +39,7 @@
     .header__inside {
       backdrop-filter: blur(30px);
       box-shadow: 0 40px 50px 0 rgba(0, 0, 0, 0.07);
-      background: rgba(242, 242, 242, 0.9);
+      background-color: rgba(242, 242, 242, 0.9);
     }
     .logo-dark {
       display: block;

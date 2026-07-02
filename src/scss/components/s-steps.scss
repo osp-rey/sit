@@ -1,0 +1,109 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-steps {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+
+    @include desktop-big {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @include laptop-min {
+      gap: 10px;
+    }
+  }
+  &__item {
+    position: relative;
+    padding: 30px;
+    border-radius: 15px;
+
+    @include desktop-big {
+      grid-column: 2 span;
+
+      &:nth-child(4),
+      &:nth-child(5) {
+        grid-column: 3 span;
+      }
+    }
+    @include laptop-middle {
+      padding: 20px;
+    }
+    @include tablet {
+      padding: 15px;
+    }
+    @include tablet-middle {
+      grid-column: 3 span;
+      &:nth-child(5) {
+        grid-column: 6 span;
+      }
+    }
+    @include tablet-min {
+      grid-column: 6 span !important;
+    }
+
+    .item-num {
+      font-size: 18px;
+      line-height: 130%;
+      color: var(--dark-4);
+      @include laptop-middle {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      @include tablet {
+        font-size: 15px;
+        top: 15px;
+        right: 15px;
+      }
+    }
+    .item-img {
+      display: block;
+      width: 100%;
+      margin-top: 5px;
+      max-width: 295px;
+
+      @include laptop-middle {
+        width: 240px;
+        max-width: calc(100% - 45px);
+      }
+      @include laptop-min {
+        width: 180px;
+      }
+    }
+    .item-info {
+      @include tablet {
+        max-width: 260px;
+      }
+    }
+    .item-title {
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 120%;
+      letter-spacing: -0.02em;
+      margin: 40px 0px 0px 0px;
+      @include laptop-middle {
+        font-size: 28px;
+      }
+      @include laptop-min {
+        margin-top: 20px;
+        font-size: 24px;
+      }
+      @include tablet {
+        font-size: 19px;
+        margin-top: 10px;
+      }
+    }
+    .item-content {
+      font-size: 18px;
+      line-height: 130%;
+      margin: 10px 0px 0px 0px;
+      color: var(--dark-5);
+      @include tablet {
+        font-size: 15px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
