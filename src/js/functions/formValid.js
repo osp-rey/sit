@@ -23,4 +23,29 @@ export default function formValid() {
         },
       ]);
   }
+
+  const connectForm = document.querySelector(
+    ".s-connect__form",
+  );
+
+  if (connectForm) {
+    const validator = new JustValidate(connectForm);
+
+    validator
+      .addField("#connect-name", [
+        {
+          rule: "required",
+        },
+      ])
+      .addField("#connect-tel", [
+        {
+          rule: "required",
+        },
+      ])
+      .addField("#connect-policy", [
+        {
+          rule: "required",
+        },
+      ]);
+  }
 }

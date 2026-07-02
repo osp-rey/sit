@@ -16,6 +16,8 @@
 @use "./ui/slider";
 @use "./ui/form";
 @use "./ui/card-product";
+@use "./ui/card-review";
+@use "./ui/text";
 
 @use "./components/header";
 @use "./components/burger";
@@ -27,5 +29,6 @@
 @use "./components/s-adv";
 @use "./components/s-products";
 @use "./components/s-connect";
+@use "./components/s-reviews";
 
 @use "./components/footer";

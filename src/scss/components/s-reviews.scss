@@ -1,0 +1,118 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-reviews {
+  &__head-row {
+    @include flex-between;
+    gap: 25px;
+    margin-top: 10px;
+    @include laptop-min {
+      flex-wrap: wrap;
+    }
+
+    .slider-nav {
+      @include tablet-min {
+        display: none;
+      }
+    }
+  }
+  &__content {
+    margin: 0;
+  }
+  &__toggle {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 30px;
+    @include laptop-min {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  &__service {
+    display: flex;
+    gap: 15px;
+    flex-shrink: 0;
+    .service-logo {
+      display: block;
+      width: 100px;
+      @include tablet {
+        width: 80px;
+      }
+    }
+    .service-separator {
+      height: auto;
+      width: 1px;
+      background-color: var(--dark-1);
+    }
+    .service-rating {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      align-self: center;
+    }
+    .service-rating-num {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 140%;
+      letter-spacing: -0.04em;
+      @include tablet {
+        font-size: 18px;
+      }
+    }
+    .service-stars {
+      display: flex;
+      gap: 1px;
+
+      img {
+        display: block;
+        pointer-events: none;
+        width: 18px;
+
+        @include tablet {
+          width: 16px;
+        }
+      }
+    }
+  }
+  &__slider {
+    .swiper-wrapper {
+      @include tablet-min {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    .swiper-slide {
+      box-sizing: border-box;
+
+      @include tablet-min {
+        transition: transform .3s ease, opacity .3s ease;
+        &:nth-child(n+3) {
+          opacity: 0;
+          transform: translateY(20px);
+          display: none !important;
+
+          &._active {
+            display: block !important;
+          }
+          &._show {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  &__btn-consult {
+    margin-top: 30px;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__btn-more {
+    margin-top: 30px;
+    @media (min-width: 575px) {
+      display: none !important;
+    }
+  }
+}

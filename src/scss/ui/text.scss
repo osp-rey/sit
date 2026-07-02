@@ -1,0 +1,22 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.text-b {
+  font-size: 26px;
+  line-height: 140%;
+  @include laptop-middle {
+    font-size: 22px;
+  }
+  @include tablet {
+    font-size: 15px;
+  }
+}
+.text-l {
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: -0.04em;
+
+  @include tablet {
+    font-size: 17px;
+  }
+}

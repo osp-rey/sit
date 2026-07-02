@@ -86,6 +86,30 @@ export default function sliders() {
       });
     });
   }
+
+  const reviewsSlider = document.querySelector(".s-reviews__slider");
+
+  if (reviewsSlider && window.matchMedia("(min-width: 992px)").matches) {
+    const swiper = new Swiper(reviewsSlider, {
+      speed: 900,
+      spaceBetween: 10,
+      slidesPerView: 2,
+      navigation: {
+        prevEl: ".s-reviews .slider-arrow._prev",
+        nextEl: ".s-reviews .slider-arrow._next",
+      },
+      breakpoints: {
+        1365: {
+          spaceBetween: 16,
+          slidesPerView: 4,
+        },
+        992: {
+          spaceBetween: 16,
+          slidesPerView: 3,
+        },
+      },
+    });
+  }
 }
 
 function updateVisibleSlides(swiper) {

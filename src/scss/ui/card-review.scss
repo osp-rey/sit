@@ -1,0 +1,81 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.card-review {
+  border-radius: 15px;
+  padding: 25px;
+  background-color: white;
+  @include tablet {
+    padding: 15px;
+    border-radius: 10px;
+  }
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    .profile-avatar {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      flex-shrink: 0;
+      object-fit: cover;
+      @include tablet {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .profile-name {
+      font-weight: 500;
+    }
+    .profile-text {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 140%;
+      letter-spacing: -0.03em;
+      @include tablet {
+        font-size: 11px;
+      }
+    }
+  }
+  &__profile-descr {
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    margin: 16px 0px 0px 0px;
+    @include tablet {
+      font-size: 15px;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 15px;
+    padding-top: 20px;
+    border-top: 1px solid var(--dark-1);
+    @include tablet {
+      padding-top: 15px;
+    }
+  }
+  &__date {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    @include tablet {
+      font-size: 13px;
+    }
+  }
+  &__rating {
+    display: flex;
+    gap: 2px;
+
+    img {
+      display: block;
+      width: 18px;
+      pointer-events: none;
+      @include tablet {
+        width: 16px;
+      }
+    }
+  }
+}

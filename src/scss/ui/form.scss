@@ -39,6 +39,7 @@
 
   @include tablet {
     font-size: 16px;
+    border-radius: 10px;
     padding: 12px 20px;
 
     &::placeholder {
@@ -59,27 +60,50 @@
       color: var(--placeholder-f);
     }
   }
+  &._transparent {
+    --border: rgba(255, 255, 255, 0.1);
+    --backround: rgba(255, 255, 255, 0.1);
+    --color: white;
+    --placeholder: white;
+    --placeholder-f: white;
+    --border-f: white;
+    --backround-f: rgba(255, 255, 255, 0.1);
+    --color-f: white;
+  }
 
   &.just-validate-error-field {
-    --border: rgba(255, 64, 0, 0.3);
-    --backround: white;
-    --color: var(--red);
-    --placeholder: var(--red);
-    --placeholder-f: var(--red);
-    --border-f: rgba(255, 64, 0, 0.3);
-    --backround-f: white;
-    --color-f: var(--red);
+    --border: rgba(255, 64, 0, 0.3) !important;
+    --color: var(--red) !important;
+    --placeholder: var(--red) !important;
+    --placeholder-f: var(--red) !important;
+    --border-f: rgba(255, 64, 0, 0.3) !important;
+    --color-f: var(--red) !important;
   }
 }
 
 .check-wrap {
+  &._white {
+    label {
+      --color: rgba(255, 255, 255, 0.5);
+
+      &::before {
+        --border: rgba(255, 255, 255, 0.3);
+        --background: transparent;
+        --url: url("@img/check-white.svg");
+
+        --border-a: transparent;
+        --background-a: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
   input[type="checkbox"] {
     display: none;
 
     &:checked + label {
       &::before {
         border-color: var(--border-a);
-        background: var(--url) center / 10px auto no-repeat;
+        background: var(--url) center / 11px auto no-repeat;
         background-color: var(--background-a);
       }
     }
@@ -88,7 +112,7 @@
       --color: var(--red);
 
       &::before {
-        --border: var(--red)
+        --border: var(--red);
       }
     }
   }

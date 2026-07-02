@@ -1,16 +1,122 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
 .s-connect {
   &__wrap {
+    color: white;
+
+    @include tablet-min {
+      padding-top: 120px;
+    }
   }
   &__info {
+    max-width: 965px;
   }
   &__title {
   }
   &__descr {
-  }
-  &__form {
-    .form-wrap {
+    margin: 20px 0px 0px 0px;
+
+    @include tablet {
+      margin-top: 5px;
     }
   }
-  &__img {
+  &__form {
+    margin-top: 35px;
+    max-width: 725px;
+
+    @include tablet {
+      margin-top: 20px;
+      max-width: 590px;
+    }
+
+    .form-wrap {
+      display: flex;
+      gap: 8px;
+
+      @include tablet-min {
+        flex-direction: column;
+      }
+
+      .input-control {
+        flex: 1;
+        @include tablet-min {
+          flex: auto;
+          width: 100%;
+        }
+      }
+      .btn-s {
+        width: 210px;
+        flex-shrink: 0;
+        @include tablet {
+          width: 170px;
+        }
+      }
+    }
+    .check-wrap {
+      margin-top: 30px;
+      @include tablet {
+        margin-top: 20px;
+      }
+    }
+  }
+  &__gallery {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 715px;
+    z-index: -1;
+
+    @include laptop-middle {
+      width: 500px;
+    }
+    @include laptop-min {
+      display: none;
+    }
+    @include tablet-min {
+      width: 100%;
+      display: block;
+      left: 0;
+      top: -35px;
+      bottom: auto;
+    }
+
+    .inside {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      &::before {
+        position: absolute;
+        content: "";
+        inset: 0;
+        filter: blur(5px);
+        background: linear-gradient(
+          163deg,
+          rgba(31, 38, 46, 0.5) 0%,
+          #1f262e 100%
+        );
+        z-index: 1;
+
+        @include tablet-min {
+          background: linear-gradient(
+            45deg,
+            rgba(31, 38, 46, 0.5) 0%,
+            #1f262e 100%
+          );
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    picture {
+      display: block;
+      width: 100%;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
 }

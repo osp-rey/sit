@@ -5,6 +5,7 @@ import headerHeight from "./functions/headerHeight.js";
 import headerScroll from "./functions/headerScroll.js";
 import inputmask from "./functions/inputmask.js";
 import mediaAdaptive from "./functions/mediaAdaptive.js";
+import moreReviews from "./functions/moreReviews.js";
 import sliders from "./functions/sliders.js";
 import tab from "./functions/tab.js";
 
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   tab();
   formValid();
   inputmask();
+  moreReviews();
 
   Fancybox.bind("[data-fancybox]", { closeButton: false });
   // Fancybox.show([{ src: "#modal-feedback", type: "inline" }], {
