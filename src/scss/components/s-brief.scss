@@ -1,0 +1,50 @@
+.s-brief {
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  &__info {
+    flex: 0 1 820px;
+  }
+  &__title {
+  }
+  &__content {
+    margin: 24px 0px 0px 0px;
+  }
+  &__adv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    row-gap: 30px;
+    margin-top: 60px;
+  }
+  &__adv-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .item-icon {
+      display: block;
+      flex-shrink: 0;
+      width: 40px;
+    }
+    .item-text {
+      font-size: 17px;
+    }
+  }
+  &__form {
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+
+      .form-control._full {
+        grid-column: 2 span;
+      }
+    }
+    .form-nav {
+      margin-top: 14px;
+    }
+  }
+}

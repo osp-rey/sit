@@ -162,3 +162,33 @@
     display: none;
   }
 }
+
+.input-file {
+  display: none;
+}
+.label-file {
+  --border: var(--dark-2);
+  --backround: white;
+  --color: var(--dark);
+  --border-h: var(--dark);
+  --backround-h: white;
+  --color-h: var(--dark);
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  flex: 0 1 860px;
+  
+  user-select: none;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: -0.01em;
+
+  svg {
+    display: block;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+  }
+}
