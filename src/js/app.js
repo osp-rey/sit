@@ -3,6 +3,7 @@ import formValid from "./functions/formValid.js";
 import headerDrop from "./functions/headerDrop.js";
 import headerHeight from "./functions/headerHeight.js";
 import headerScroll from "./functions/headerScroll.js";
+import inputFiles from "./functions/inputFiles.js";
 import inputmask from "./functions/inputmask.js";
 import mediaAdaptive from "./functions/mediaAdaptive.js";
 import moreReviews from "./functions/moreReviews.js";
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   inputmask();
   moreReviews();
   spollers();
+  inputFiles();
 
   Fancybox.bind("[data-fancybox]", { closeButton: false });
   // Fancybox.show([{ src: "#modal-feedback", type: "inline" }], {

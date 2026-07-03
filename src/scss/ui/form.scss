@@ -9,6 +9,9 @@
   }
 }
 
+textarea.input {
+  display: block;
+}
 .input {
   --border: var(--dark-2);
   --backround: white;
@@ -21,7 +24,6 @@
 
   outline: none;
   border: 1px solid var(--border);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
   background-color: var(--backround);
   width: 100%;
   padding: 20px 28px;
@@ -178,17 +180,53 @@
   align-items: center;
   gap: 15px;
   cursor: pointer;
-  flex: 0 1 860px;
-  
+  border: 1px solid var(--border);
+  background-color: var(--backround);
+  width: 100%;
+  padding: 20px 28px;
+  border-radius: 12px;
+
+  color: var(--color);
   user-select: none;
   font-size: 18px;
   line-height: 160%;
   letter-spacing: -0.01em;
+
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+
+  @include hover {
+    color: var(--color-h);
+    background-color: var(--backround-h);
+    border-color: var(--border-h);
+  }
+  @include tablet {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 12px 20px;
+
+    &::placeholder {
+      font-size: 15px;
+    }
+  }
+
+  span {
+    color: rgba(18, 31, 48, 0.3);
+  }
 
   svg {
     display: block;
     flex-shrink: 0;
     width: 20px;
     height: 20px;
+    @include tablet {
+      width: 16px;
+      height: 16px;
+      color: var(--dark-6);
+    }
   }
 }
