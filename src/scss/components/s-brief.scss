@@ -3,7 +3,28 @@
 
 .s-brief {
   position: relative;
+  margin-bottom: 0 !important;
+  padding-bottom: 15px;
   z-index: 1;
+  @include tablet {
+    padding-bottom: 5px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 240px;
+    background-color: var(--dark);
+    z-index: -1;
+
+    @include tablet-min {
+      height: 75px;
+    }
+  }
+
   &__wrapper {
     display: flex;
     align-items: start;
