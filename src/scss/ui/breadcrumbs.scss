@@ -1,5 +1,5 @@
-@use '../base/templates' as *;
-@use '../base/media' as *;
+@use "../base/templates" as *;
+@use "../base/media" as *;
 
 .breadcrumbs {
   margin: 50px 0px;
@@ -9,6 +9,17 @@
   }
   @include tablet {
     margin-bottom: 20px;
+  }
+
+  &._white {
+    .breadrumbs-btn {
+      --background: rgba(255, 255, 255, 0.08);
+      --color: white;
+      --background-h: rgba(255, 255, 255, 0.3);
+      --color-h: white;
+      --color-d: rgba(255, 255, 255, 0.3);
+      --backround-d: rgba(255, 255, 255, 0.03);
+    }
   }
 }
 .breadcrumbs-wrap {
@@ -24,22 +35,31 @@
   }
 }
 .breadrumbs-btn {
+  --background: var(--dark-1);
+  --color: var(--dark-6);
+  --background-h: var(--dark-3);
+  --color-h: var(--dark);
+  --color-d: var(--dark);
+  --backround-d: var(--dark-1);
+
   display: flex;
   align-items: center;
   width: fit-content;
   gap: 4px;
   padding: 2px 9px;
   border-radius: 8px;
-  background-color: var(--dark-1);
+  background-color: var(--background);
 
   user-select: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 160%;
   letter-spacing: -0.03em;
-  color: var(--dark-6);
+  color: var(--color);
 
-  transition: color .3s ease, background-color .3s ease;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
 
   @include tablet {
     font-size: 11px;
@@ -58,11 +78,11 @@
 }
 a.breadrumbs-btn {
   @include hover {
-    background-color: var(--dark-3);
-    color: var(--dark);
+    background-color: var(--background-h);
+    color: var(--color-h);
   }
 }
 div.breadrumbs-btn {
-  color: var(--dark-4);
-  background-color: var(--dark-1);
+  color: var(--color-d);
+  background-color: var(--background-d);
 }

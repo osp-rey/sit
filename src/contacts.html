@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  @@include("components/head.html")
+</head>
+<body class="body">
+
+  @@include("components/header.html")
+  @@include("components/burger.html")
+  @@include("components/modals.html")
+  
+  <main>
+    <div class="breadcrumbs">
+      <div class="g-wrap breadcrumbs-wrap">
+        <div class="container">
+          <div class="breadcrumbs-row">
+            <a href="/" class="breadrumbs-btn">
+              <span>Главная</span>
+              <svg class="arrow">
+                <use xlink:href='img/icons/icons.svg#icon-next'></use>
+              </svg>
+            </a>
+            <div class="breadrumbs-btn">
+              <span>Контакты</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include("components/s-contacts.html")
+    @@include("components/s-brief.html")
+    @@include("components/s-requisites.html")
+
+  </main>
+
+  @@include("components/footer.html")
+  
+  <script src="./js/app.js?ver=@@versions.js"></script>
+</body>
+</html>

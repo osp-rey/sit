@@ -1,0 +1,43 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.s-notfound {
+  &__wrap {
+    @media (min-width: 992px) {
+      padding-top: 20px !important;
+    }
+  }
+  &__inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    width: 925px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    @include tablet {
+      width: 515px;
+    }
+  }
+  &__img {
+    display: block;
+  }
+  &__title {
+  }
+  &__content {
+    margin: 12px 0px 0px 0px;
+    @include tablet {
+      max-width: 470px;
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--primary);
+      @include hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

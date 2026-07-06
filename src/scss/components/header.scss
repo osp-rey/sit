@@ -27,9 +27,9 @@
       backdrop-filter: none !important;
       box-shadow: none !important;
       background-color: white !important;
+      border-radius: 0px;
     }
   }
-
   &._fill,
   &._scroll {
     padding: 14px 0px;
@@ -74,7 +74,8 @@
       bacdrop-filter 0.3s ease,
       background-color 0.3s ease,
       box-shadow 0.3s ease,
-      margin 0.3s ease;
+      margin 0.3s ease,
+      border-radius 0.3s ease;
 
     @include laptop-min {
       border-radius: 16px;

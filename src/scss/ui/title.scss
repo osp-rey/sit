@@ -37,7 +37,7 @@
     font-size: 70px;
   }
   @include laptop {
-    font-size: 60px;
+    font-size: 54px;
   }
   @include tablet {
     font-size: 40px;
@@ -51,7 +51,7 @@
   margin: 0;
 
   @include desktop {
-    font-size: 58px;
+    font-size: 54px;
   }
   @include laptop {
     font-size: 44px;

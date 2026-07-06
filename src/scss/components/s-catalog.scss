@@ -4,7 +4,6 @@
 .s-catalog {
   overflow: hidden;
   .g-wrap {
-    padding-top: 0 !important;
     @include laptop-min {
       overflow: visible;
     }

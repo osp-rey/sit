@@ -19,6 +19,13 @@
   @include tablet-min {
     padding: 50px 12px;
   }
+
+  &._top-off {
+    padding-top: 0 !important;
+  }
+  &._p-off {
+    padding: 0 !important;
+  }
 }
 .sect-m {
   margin: 15px 0px;

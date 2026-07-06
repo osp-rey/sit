@@ -5,6 +5,7 @@ import headerHeight from "./functions/headerHeight.js";
 import headerScroll from "./functions/headerScroll.js";
 import inputFiles from "./functions/inputFiles.js";
 import inputmask from "./functions/inputmask.js";
+import map from "./functions/map.js";
 import mediaAdaptive from "./functions/mediaAdaptive.js";
 import moreReviews from "./functions/moreReviews.js";
 import sliders from "./functions/sliders.js";
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   moreReviews();
   spollers();
   inputFiles();
+  map();
 
   Fancybox.bind("[data-fancybox]", { closeButton: false });
   // Fancybox.show([{ src: "#modal-feedback", type: "inline" }], {
