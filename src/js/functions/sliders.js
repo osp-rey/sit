@@ -46,22 +46,31 @@ export default function sliders() {
 
   if (productsSliders.length) {
     productsSliders.forEach((slider) => {
-      const idTab = slider.closest("[data-tab]").dataset.tab;
+      const idTab = slider.closest("[data-tab]")?.dataset.tab;
       const navTab = document.querySelector(
         `.s-products__toggle [data-tab="${idTab}"]`,
       );
+      let navigation = {
+        prevEl: navTab?.querySelector(".slider-arrow._prev"),
+        nextEl: navTab?.querySelector(".slider-arrow._next"),
+      };
+
+      if (!idTab) {
+        navigation = {
+          prevEl: ".s-products .slider-arrow._prev",
+          nextEl: ".s-products .slider-arrow._next",
+        };
+      }
+
       const swiper = new Swiper(slider, {
         speed: 900,
         spaceBetween: 10,
         slidesPerView: "auto",
-        navigation: {
-          prevEl: navTab?.querySelector(".slider-arrow._prev"),
-          nextEl: navTab?.querySelector(".slider-arrow._next"),
-        },
+        navigation,
         breakpoints: {
           1540: {
             spaceBetween: 16,
-            slidesPerView: 6,
+            slidesPerView: +slider.dataset.startPreview || 6,
           },
           992: {
             spaceBetween: 16,
@@ -106,6 +115,67 @@ export default function sliders() {
         992: {
           spaceBetween: 16,
           slidesPerView: 3,
+        },
+      },
+    });
+  }
+
+  const rowNavSliders = document.querySelectorAll(".row-nav");
+
+  if (rowNavSliders.length) {
+    rowNavSliders.forEach((slider) => {
+      const swiper = new Swiper(slider, {
+        speed: 900,
+        spaceBetween: 4,
+        slidesPerView: "auto",
+        breakpoints: {
+          769: {
+            spaceBetween: 6,
+            slidesPerView: "auto",
+          },
+        },
+      });
+    });
+  }
+
+  const productSlider = document.querySelector(".s-product__slider");
+
+  if (productSlider) {
+    const productThumbSlider = document.querySelector(
+      ".s-product__thumb-slider",
+    );
+
+    const thumbSwiper = new Swiper(productThumbSlider, {
+      speed: 900,
+      spaceBetween: 5,
+      slidesPerView: 5,
+      navigation: {
+        prevEl: ".s-product__thumb-wrap .slider-arrow._prev",
+        nextEl: ".s-product__thumb-wrap .slider-arrow._next",
+      },
+      breakpoints: {
+        576: {
+          spaceBetween: 10,
+          slidesPerView: 5,
+        },
+      },
+    });
+
+    const swiper = new Swiper(productSlider, {
+      speed: 900,
+      slidesPerView: "auto",
+      spaceBetween: 10,
+      navigation: {
+        prevEl: productSlider.querySelector(".slider-arrow._prev"),
+        nextEl: productSlider.querySelector(".slider-arrow._next"),
+      },
+      thumbs: {
+        swiper: thumbSwiper,
+      },
+      breakpoints: {
+        1200: {
+          slidesPerView: 1,
+          spaceBetween: 20,
         },
       },
     });

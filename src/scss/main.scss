@@ -18,6 +18,8 @@
 @use "./ui/card-product";
 @use "./ui/card-review";
 @use "./ui/text";
+@use "./ui/breadcrumbs";
+@use "./ui/row-nav";
 
 @use "./components/header";
 @use "./components/burger";
@@ -33,5 +35,8 @@
 @use "./components/s-steps";
 @use "./components/s-faq";
 @use "./components/s-brief";
+@use "./components/s-catalog";
+@use "./components/s-production";
+@use "./components/s-product";
 
 @use "./components/footer";

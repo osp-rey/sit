@@ -1,0 +1,12 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
+.row-nav {
+  @include laptop-min {
+    overflow: visible !important;
+  }
+  .swiper-slide {
+    box-sizing: border-box;
+    width: auto !important;
+  }
+}

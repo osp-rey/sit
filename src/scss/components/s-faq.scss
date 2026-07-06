@@ -2,6 +2,9 @@
 @use "../base/media" as *;
 
 .s-faq {
+  &__wrap {
+    padding-top: 0 !important;
+  }
   &__wrapper {
     display: flex;
     align-items: start;

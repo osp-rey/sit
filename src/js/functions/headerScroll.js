@@ -4,13 +4,13 @@ export default function headerScroll() {
   if (header) {
     let lastScrollTop = 0;
 
-    window.addEventListener("scroll", () => {
+    function changeScroll() {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
       if (scrollTop > 0) {
         header.classList.add("_scroll");
       } else {
-        header.classList.remove("_scroll")
+        header.classList.remove("_scroll");
       }
 
       if (scrollTop > lastScrollTop) {
@@ -20,6 +20,10 @@ export default function headerScroll() {
       }
 
       lastScrollTop = scrollTop;
-    });
+    }
+
+    window.addEventListener("scroll", changeScroll);
+
+    changeScroll();
   }
 }

@@ -43,4 +43,9 @@
   @include laptop-min {
     margin-bottom: 30px;
   }
+
+  &__wrap {
+    @include flex-between;
+    gap: 30px;
+  }
 }

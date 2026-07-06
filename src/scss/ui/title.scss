@@ -26,6 +26,23 @@
     line-height: 100%;
   }
 }
+.m-title {
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  margin: 0;
+
+  @include desktop {
+    font-size: 70px;
+  }
+  @include laptop {
+    font-size: 60px;
+  }
+  @include tablet {
+    font-size: 40px;
+  }
+}
 .s-title {
   font-weight: 500;
   font-size: 67px;

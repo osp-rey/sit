@@ -18,11 +18,19 @@
   --ghost-2: #f6f7f8;
 
   --white-1: rgba(255, 255, 255, 0.1);
+  --white-4: rgba(255, 255, 255, 0.4);
 
   --red: #ff4000;
 
   --radius: 20px;
+  --radius-m: 15px;
+  --radius-l: 15px;
   @include laptop-min {
     --radius: 12px;
+    --radius-m: 12px;
+    --radius-l: 10px;
+  }
+  @include tablet-min {
+    --radius-m: 10px;
   }
 }

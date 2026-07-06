@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  @@include("components/head.html")
+</head>
+<body class="body">
+
+  @@include("components/header.html")
+  @@include("components/burger.html")
+  @@include("components/modals.html")
+  
+  <main>
+    <div class="breadcrumbs">
+      <div class="g-wrap breadcrumbs-wrap">
+        <div class="container">
+          <div class="breadcrumbs-row">
+            <a href="/" class="breadrumbs-btn">
+              <span>Главная</span>
+              <svg class="arrow">
+                <use xlink:href='img/icons/icons.svg#icon-next'></use>
+              </svg>
+            </a>
+            <a href="/" class="breadrumbs-btn">
+              <span>Продукция</span>
+              <svg class="arrow">
+                <use xlink:href='img/icons/icons.svg#icon-next'></use>
+              </svg>
+            </a>
+            <div class="breadrumbs-btn">
+              <span>Бутылка круглая</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include("components/s-product.html")
+    @@include("components/repeat/s-products-rec.html")
+    @@include("components/s-reviews.html")
+    @@include("components/repeat/s-about-production.html")
+    @@include("components/s-faq.html")
+    @@include("components/s-brief.html")
+
+  </main>
+
+  @@include("components/footer.html")
+  
+  <script src="./js/app.js?ver=@@versions.js"></script>
+</body>
+</html>

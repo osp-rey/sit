@@ -84,11 +84,11 @@
     padding: 20px 0px;
 
     @include laptop-min {
-      padding: 10px 0px;
+      padding: 10px 0px 18px 0px;
     }
-    @include tablet-min {
-      padding: 8px 0px;
-    }
+    // @include tablet-min {
+    //   padding: 8px 0px;
+    // }
   }
   &__wrapper {
     display: flex;

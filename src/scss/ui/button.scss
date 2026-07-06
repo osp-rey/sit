@@ -134,12 +134,20 @@
   @include hover {
     background-color: var(--background-h);
     border-color: var(--border-h);
-    color: var(--color);
+    color: var(--color-h);
   }
 
   .arrow {
     width: 14px;
     height: 14px;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+    @include tablet {
+      width: 15px;
+      height: 15px;
+    }
   }
 
   &._outline-white {
@@ -149,12 +157,39 @@
     --border-h: white;
     --background-h: transparent;
     --color-h: white;
-
-    box-shadow: none;
+    --shadow: none;
+  }
+    &._outline {
+    --border: var(--dark-2);
+    --background: transparent;
+    --color: var(--dark);
+    --border-h: var(--primary);
+    --background-h: transparent;
+    --color-h: var(--primary);
+    --shadow: none;
+  }
+  &._white {
+    --border: white;
+    --background: white;
+    --color: var(--dark);
+    --border-h: var(--primary);
+    --background-h: var(--primary);
+    --color-h: white;
+    --shadow: none;
+  }
+  &._ghost {
+    --border: var(--ghost);
+    --background: var(--ghost);
+    --color: var(--dark);
+    --border-h: var(--dark);
+    --background-h: var(--dark);
+    --color-h: white;
+    --shadow: none;
   }
 
   @include tablet {
     font-size: 15px;
     padding: 13px 20px;
+    border-radius: 10px;
   }
 }

@@ -6,6 +6,13 @@
   &__wrap {
     overflow: visible;
   }
+  &__head {
+    @include tablet-min {
+      .slider-arrow {
+        display: none;
+      }
+    }
+  }
   &__nav {
     display: flex;
     align-items: start;
@@ -45,7 +52,7 @@
       height: auto !important;
       opacity: 0;
 
-      transition: opacity .3s ease;
+      transition: opacity 0.3s ease;
 
       @include tablet-middle {
         width: 215px !important;

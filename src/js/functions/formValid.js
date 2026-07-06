@@ -24,9 +24,7 @@ export default function formValid() {
       ]);
   }
 
-  const connectForm = document.querySelector(
-    ".s-connect__form",
-  );
+  const connectForm = document.querySelector(".s-connect__form");
 
   if (connectForm) {
     const validator = new JustValidate(connectForm);
@@ -43,6 +41,29 @@ export default function formValid() {
         },
       ])
       .addField("#connect-policy", [
+        {
+          rule: "required",
+        },
+      ]);
+  }
+
+  const briefForm = document.querySelector(".s-brief__form");
+
+  if (briefForm) {
+    const validator = new JustValidate(briefForm);
+
+    validator
+      .addField("#brief-name", [
+        {
+          rule: "required",
+        },
+      ])
+      .addField("#brief-tel", [
+        {
+          rule: "required",
+        },
+      ])
+      .addField("#brief-policy", [
         {
           rule: "required",
         },
