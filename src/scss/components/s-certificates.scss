@@ -1,0 +1,84 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-certificates {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+
+    @include tablet {
+      margin-top: 15px;
+    }
+
+    li {
+      display: flex;
+      align-items: start;
+      gap: 20px;
+
+      @include tablet {
+        gap: 10px;
+      }
+
+      svg {
+        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
+        color: var(--primary);
+        margin-top: 6px;
+
+        @include tablet {
+          width: 16px;
+          height: 16px;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 40px;
+    gap: 32px;
+
+    @include desktop {
+      gap: 20px;
+    }
+    @include laptop-middle {
+      gap: 10px;
+    }
+    @include laptop-min {
+      margin-top: 25px;
+    }
+    @include tablet-middle {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &__item {
+    display: block;
+    position: relative;
+    aspect-ratio: 1/1.35;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 14px 25px 0 rgba(0, 0, 0, 0.05);
+
+    transition: border-color 0.3s ease;
+    @include hover {
+      border-color: var(--primary);
+    }
+    @include tablet {
+      border-radius: 5px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      transition: transform 0.3s linear;
+    }
+  }
+}

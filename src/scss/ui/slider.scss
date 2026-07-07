@@ -50,3 +50,35 @@
     opacity: 0.7 !important;
   }
 }
+
+.slider-pagination-l {
+  display: flex;
+  gap: 10px;
+  width: fit-content !important;
+
+  @include tablet {
+    gap: 8px;
+  }
+
+  .swiper-pagination-bullet {
+    cursor: pointer;
+    opacity: 1 !important;
+    width: 16px;
+    height: 3px;
+    border-radius: 4px;
+    margin: 0 !important;
+    background-color: var(--dark-6);
+
+    transition: background-color .3s ease;
+
+    @include hover {
+      background-color: var(--primary);
+    }
+    @include tablet {
+      height: 2px;
+    }
+    &.swiper-pagination-bullet-active {
+      background-color: var(--primary);
+    }
+  }
+}

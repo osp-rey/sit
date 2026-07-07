@@ -1,0 +1,164 @@
+@use "../base/templates" as *;
+@use "../base/media" as *;
+
+.s-stages {
+  overflow: hidden;
+  &__wrap {
+    overflow: visible;
+  }
+  &__content {
+    max-width: 1100px;
+    margin: 15px 0px 0px 0px;
+    @include tablet {
+      margin-top: 10px;
+      max-width: 540px;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    row-gap: 70px;
+
+    @include laptop-middle {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include laptop-min {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+  &__item {
+    @media (min-width: 1200px) {
+      &:nth-child(4n) {
+        .item-decor {
+          .line-r {
+            right: -50vw !important;
+          }
+        }
+      }
+      &:nth-child(4n + 1) {
+        .item-decor {
+          .line-l {
+            display: block;
+          }
+        }
+      }
+    }
+    @include laptop-middle {
+      &:nth-child(3n) {
+        .item-decor {
+          .line-r {
+            right: -50vw !important;
+          }
+        }
+      }
+      &:nth-child(3n + 1) {
+        .item-decor {
+          .line-l {
+            display: block;
+          }
+        }
+      }
+    }
+    @include tablet {
+      display: flex;
+      gap: 20px;
+    }
+    &:last-child {
+      .item-decor {
+        .line-r {
+          display: none !important;
+        }
+      }
+    }
+
+    .item-decor {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 30px;
+      color: var(--primary);
+
+      @include tablet {
+        display: block;
+        margin: 10px 0px 0px 0px;
+      }
+
+      .line-l {
+        position: absolute;
+        right: calc(100% + 32px);
+        left: -50vw;
+        height: 2px;
+        background-color: currentColor;
+        display: none;
+
+        @include tablet {
+          display: none !important;
+        }
+      }
+      .rect {
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 5px;
+        background-color: currentColor;
+
+        @include tablet {
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+        }
+      }
+      .line-r {
+        position: absolute;
+        left: 32px;
+        right: 0;
+        height: 2px;
+        background-color: currentColor;
+
+        @include tablet {
+          top: 15px;
+          height: auto;
+          width: 1px;
+          left: 2px;
+          bottom: -20px;
+        }
+      }
+    }
+    .item-year {
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 100%;
+      letter-spacing: -0.01em;
+
+      color: white;
+      text-shadow:
+        -1px -1px 0 var(--dark),
+        1px -1px 0 var(--dark),
+        -1px 1px 0 var(--dark),
+        1px 1px 0 var(--dark);
+
+      @include laptop-min {
+        font-size: 32px;
+      }
+      @include tablet {
+        font-size: 25px;
+      }
+    }
+    .item-text {
+      margin-top: 8px;
+      font-size: 18px;
+      line-height: 140%;
+      color: var(--dark-6);
+
+      @include laptop-min {
+        font-size: 16px;
+      }
+      @include tablet {
+        font-size: 13px;
+      }
+    }
+  }
+}

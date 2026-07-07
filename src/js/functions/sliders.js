@@ -180,6 +180,33 @@ export default function sliders() {
       },
     });
   }
+
+  const previewSlider = document.querySelector(".s-preview__slider");
+
+  if (previewSlider) {
+    const swiper = new Swiper(previewSlider, {
+      speed: 900,
+      spaceBetween: 10,
+      slidesPerView: "auto",
+      pagination: {
+        el: ".s-preview .slider-pagination-l",
+        clickable: true,
+      },
+      navigation: {
+        prevEl: ".s-preview .slider-arrow._prev",
+        nextEl: ".s-preview .slider-arrow._next",
+      },
+      autoplay: {
+        delay: 6000
+      },
+      breakpoints: {
+        1200: {
+          spaceBetween: 15,
+          slidesPerView: 3,
+        },
+      },
+    });
+  }
 }
 
 function updateVisibleSlides(swiper) {
