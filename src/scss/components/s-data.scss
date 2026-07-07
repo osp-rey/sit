@@ -1,6 +1,12 @@
 @use "../base/templates" as *;
 @use "../base/media" as *;
 .s-data {
+  &__wrap {
+    @include tablet {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -14,11 +20,15 @@
     overflow: hidden;
     position: relative;
     padding: 60px 40px;
-    min-height: 595px;
     z-index: 1;
-
-    @include laptop {
-      min-height: auto;
+    @include laptop-min {
+      padding: 40px 30px;
+    }
+    @include tablet {
+      padding: 30px 25px;
+    }
+    @include tablet-min {
+      grid-column: 2 span;
     }
 
     &._data {
@@ -28,11 +38,32 @@
       @include laptop {
         grid-column: 2 span;
       }
+      @include tablet-min {
+        padding-bottom: 150px;
+      }
     }
     &._control {
       display: flex;
       align-items: flex-end;
       color: white;
+      @include tablet {
+        align-items: start;
+      }
+      @include tablet-min {
+        padding-bottom: 150px;
+      }
+    }
+    &._cert {
+      padding-bottom: 345px;
+      @include laptop-min {
+        padding-bottom: 250px;
+      }
+      @include tablet {
+        padding-bottom: 230px;
+      }
+      @include tablet-min {
+        padding-bottom: 220px;
+      }
     }
 
     .item-title {
@@ -44,6 +75,9 @@
 
       @include desktop {
         font-size: 44px;
+      }
+      @include laptop-min {
+        font-size: 32px;
       }
       @include tablet {
         font-size: 25px;
@@ -58,6 +92,18 @@
       @include laptop {
         top: -90px;
         right: -55px;
+      }
+      @include tablet-min {
+        left: -2px;
+        right: -2px;
+        bottom: -145px;
+        top: auto;
+
+        img {
+          display: block;
+          margin: 0 auto;
+          width: 355px;
+        }
       }
     }
     .item-img {
@@ -89,6 +135,8 @@
         }
         @include tablet {
           font-size: 15px;
+          max-width: 425px;
+          gap: 12px;
         }
 
         &::before {
@@ -101,7 +149,18 @@
             inset 0 3px 4px 0 rgba(255, 255, 255, 0.15),
             0 0 10px 0 rgba(255, 133, 0, 0.7);
           background-color: var(--primary);
-          margin-top: 8px;
+          margin-top: 10px;
+
+          @include tablet {
+            width: 6px;
+            height: 6px;
+            margin-top: 6px;
+          }
+          @include tablet-min {
+            width: 5px;
+            height: 10px;
+            margin-top: 6px;
+          }
         }
       }
     }
@@ -111,21 +170,10 @@
       top: -175px;
       z-index: -1;
 
-      .inside {
-        position: relative;
-        z-index: 1;
-
-        &::before {
-          position: absolute;
-          content: "";
-          inset: 0;
-          filter: blur(5px);
-          background: linear-gradient(
-            163deg,
-            rgba(255, 126, 18, 0.6) 0%,
-            #ff7e12 100%
-          );
-        }
+      @include tablet {
+        left: -35px;
+        bottom: -90px;
+        top: auto;
       }
     }
     .item-text-control {
@@ -142,14 +190,33 @@
       @include desktop {
         font-size: 20px;
       }
-      @include tablet {
+      @include laptop {
         font-size: 20px;
+      }
+      @include laptop-min {
+        font-size: 18px;
+      }
+      @include tablet {
+        font-size: 15px;
+        margin-top: 10px;
       }
     }
     .item-img-cert {
       position: absolute;
       left: 40px;
       bottom: -240px;
+
+      @include laptop-min {
+        left: 0;
+      }
+      @include tablet {
+        width: 350px;
+        bottom: -150px;
+
+        img {
+          width: 100%;
+        }
+      }
     }
     .item-text-cert {
       font-size: 27px;

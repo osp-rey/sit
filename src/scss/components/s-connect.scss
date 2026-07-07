@@ -10,7 +10,7 @@
     }
   }
   &__info {
-    max-width: 965px;
+    max-width: 1065px;
   }
   &__title {
   }
@@ -64,11 +64,11 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 715px;
+    width: 735px;
     z-index: -1;
 
     @include laptop-middle {
-      width: 500px;
+      width: 520px;
     }
     @include laptop-min {
       display: none;
@@ -77,36 +77,8 @@
       width: 100%;
       display: block;
       left: 0;
-      top: -35px;
+      top: -80px;
       bottom: auto;
-    }
-
-    .inside {
-      position: relative;
-      width: 100%;
-      height: 100%;
-
-      &::before {
-        position: absolute;
-        content: "";
-        inset: 0;
-        filter: blur(5px);
-        background: linear-gradient(
-          163deg,
-          rgba(31, 38, 46, 0.5) 0%,
-          #1f262e 100%
-        );
-        z-index: 1;
-
-        @include tablet-min {
-          background: linear-gradient(
-            45deg,
-            rgba(31, 38, 46, 0.5) 0%,
-            #1f262e 100%
-          );
-          transform: rotate(180deg);
-        }
-      }
     }
 
     picture {
