@@ -45,6 +45,10 @@
   background-color: var(--ghost-2);
 }
 
+.bg-primary {
+  background-color: var(--primary);
+}
+
 .sect-head {
   margin-bottom: 40px;
   @include laptop-min {

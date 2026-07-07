@@ -18,7 +18,19 @@
       --background-h: rgba(255, 255, 255, 0.3);
       --color-h: white;
       --color-d: rgba(255, 255, 255, 0.3);
-      --backround-d: rgba(255, 255, 255, 0.03);
+      --background-d: rgba(255, 255, 255, 0.03);
+    }
+  }
+  &._blur {
+    .breadrumbs-btn {
+      --background: var(--dark-4);
+      --color: var(--white-4);
+      --background-h: var(--dark-6);
+      --color-h: white;
+      --color-d: var(--white-3);
+      --background-d: var(--dark-4);
+
+      backdrop-filter: blur(10px);
     }
   }
 }
@@ -40,7 +52,7 @@
   --background-h: var(--dark-3);
   --color-h: var(--dark);
   --color-d: var(--dark);
-  --backround-d: var(--dark-1);
+  --background-d: var(--dark-1);
 
   display: flex;
   align-items: center;

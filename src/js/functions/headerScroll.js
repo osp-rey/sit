@@ -13,7 +13,7 @@ export default function headerScroll() {
         header.classList.remove("_scroll");
       }
 
-      if (scrollTop > lastScrollTop) {
+      if (scrollTop > lastScrollTop && scrollTop > header.clientHeight) {
         header.classList.add("_hide");
       } else {
         header.classList.remove("_hide");
