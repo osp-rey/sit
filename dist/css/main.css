@@ -713,6 +713,10 @@ img {
   padding-top: 0 !important;
 }
 
+.g-wrap._bottom-off {
+  padding-bottom: 0 !important;
+}
+
 .g-wrap._p-off {
   padding: 0 !important;
 }
@@ -2507,11 +2511,6 @@ div.breadrumbs-btn {
 
 .s-product__spec-wrap {
   margin-top: 5px;
-}
-
-.s-product__btn-download {
-  width: 100%;
-  margin-top: 20px;
 }
 
 .s-contacts__title {
@@ -4972,6 +4971,11 @@ div.breadrumbs-btn {
 
   .s-product__thumb-wrap .slider-arrow._next {
     transform: translateX(10px);
+  }
+
+  .s-product__btn-download {
+    width: 100%;
+    margin-top: 20px;
   }
 
   .s-contacts__map-wrap {

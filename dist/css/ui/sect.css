@@ -13,6 +13,10 @@
   padding-top: 0 !important;
 }
 
+.g-wrap._bottom-off {
+  padding-bottom: 0 !important;
+}
+
 .g-wrap._p-off {
   padding: 0 !important;
 }

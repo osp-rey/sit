@@ -168,11 +168,6 @@
   margin-top: 5px;
 }
 
-.s-product__btn-download {
-  width: 100%;
-  margin-top: 20px;
-}
-
 @media (min-width: 769px) {
   .s-product__spec-wrap {
     display: none;
@@ -292,6 +287,11 @@
 
   .s-product__thumb-wrap .slider-arrow._next {
     transform: translateX(10px);
+  }
+
+  .s-product__btn-download {
+    width: 100%;
+    margin-top: 20px;
   }
 }
 
