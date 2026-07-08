@@ -1,0 +1,152 @@
+.s-adv__content {
+  max-width: 1100px;
+  margin: 10px 0px 0px 0px;
+}
+
+.s-adv__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.s-adv__item .item-icon {
+  display: block;
+  width: 70px;
+}
+
+.s-adv__item .item-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  margin: 30px 0px 0px 0px;
+}
+
+.s-adv__item .item-content {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 130%;
+  color: var(--dark-6);
+  max-width: 390px;
+  margin: 5px 0px 0px 0px;
+}
+
+.s-adv__grid-simple {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.s-adv__item-simple .icon-wrap {
+  position: relative;
+  z-index: 1;
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.s-adv__item-simple .icon-wrap img {
+  display: block;
+  width: 100%;
+}
+
+.s-adv__item-simple .icon-wrap::before {
+  position: absolute;
+  content: "";
+  background-color: var(--primary);
+  inset: 0;
+  opacity: 0.2;
+  filter: blur(25px);
+  z-index: -1;
+}
+
+.s-adv__item-simple .item-text {
+  margin-top: 30px;
+  color: var(--dark-5);
+}
+
+.s-adv__item-simple .item-text span {
+  color: var(--dark);
+}
+
+@media (max-width: 1365px) {
+  .s-adv__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    row-gap: 30px;
+  }
+
+  .s-adv__grid-simple {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .s-adv__item .item-title {
+    font-weight: 500;
+    font-size: 19px;
+  }
+
+  .s-adv__item .item-content {
+    font-size: 18px;
+    padding-right: 45px;
+    max-width: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-adv__item .item-icon {
+    width: 40px;
+  }
+
+  .s-adv__item .item-title {
+    margin-top: 10px;
+  }
+
+  .s-adv__item .item-content {
+    font-size: 13px;
+  }
+
+  .s-adv__item-simple {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .s-adv__item-simple .icon-wrap {
+    width: 40px;
+  }
+
+  .s-adv__item-simple .icon-wrap::before {
+    opacity: 0.4;
+  }
+
+  .s-adv__item-simple .item-text {
+    margin-top: 0;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .s-adv__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .s-adv__item .item-title {
+    margin-top: 10px;
+  }
+
+  .s-adv__grid-simple {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .s-adv__item-simple {
+    flex-direction: column;
+  }
+
+  .s-adv__item-simple .item-text {
+    font-size: 19px;
+  }
+}

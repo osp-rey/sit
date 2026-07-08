@@ -1,0 +1,228 @@
+.form-control {
+  width: 100%;
+}
+
+.form-control .just-validate-error-label {
+  display: none;
+}
+
+textarea.input {
+  display: block;
+}
+
+.input {
+  --border: var(--dark-2);
+  --backround: white;
+  --color: var(--dark);
+  --placeholder: var(--dark);
+  --placeholder-f: var(--dark);
+  --border-f: var(--dark);
+  --backround-f: white;
+  --color-f: var(--dark);
+  outline: none;
+  border: 1px solid var(--border);
+  background-color: var(--backround);
+  width: 100%;
+  padding: 20px 28px;
+  border-radius: 12px;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: -0.01em;
+  color: var(--color);
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.input::placeholder {
+  color: var(--placeholder);
+  transition: color 0.3s ease;
+}
+
+.input:focus {
+  background-color: var(--backround-f);
+  border-color: var(--border-f);
+  color: var(--color-f);
+}
+
+.input:focus::placeholder {
+  color: var(--placeholder-f);
+}
+
+.input._transparent {
+  --border: rgba(255, 255, 255, 0.1);
+  --backround: rgba(255, 255, 255, 0.1);
+  --color: white;
+  --placeholder: white;
+  --placeholder-f: white;
+  --border-f: white;
+  --backround-f: rgba(255, 255, 255, 0.1);
+  --color-f: white;
+}
+
+.input.just-validate-error-field {
+  --border: rgba(255, 64, 0, 0.3) !important;
+  --color: var(--red) !important;
+  --placeholder: var(--red) !important;
+  --placeholder-f: var(--red) !important;
+  --border-f: rgba(255, 64, 0, 0.3) !important;
+  --color-f: var(--red) !important;
+}
+
+.check-wrap._white label {
+  --color: rgba(255, 255, 255, 0.5);
+}
+
+.check-wrap._white label::before {
+  --border: rgba(255, 255, 255, 0.3);
+  --background: transparent;
+  --url: url("../img/check-white.svg");
+  --border-a: transparent;
+  --background-a: rgba(255, 255, 255, 0.3);
+}
+
+.check-wrap input[type=checkbox] {
+  display: none;
+}
+
+.check-wrap input[type=checkbox]:checked + label::before {
+  border-color: var(--border-a);
+  background: var(--url) center/11px auto no-repeat;
+  background-color: var(--background-a);
+}
+
+.check-wrap input[type=checkbox].just-validate-error-field + label {
+  --color: var(--red);
+}
+
+.check-wrap input[type=checkbox].just-validate-error-field + label::before {
+  --border: var(--red);
+}
+
+.check-wrap label {
+  --color: var(--dark-5);
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--color);
+  font-size: 13px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+}
+
+.check-wrap label a {
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.check-wrap label::before {
+  --border: var(--dark-5);
+  --background: transparent;
+  --url: url("../img/check-white.svg");
+  --border-a: transparent;
+  --background-a: var(--dark-5);
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.check-wrap .just-validate-error-label {
+  display: none;
+}
+
+.input-file {
+  display: none;
+}
+
+.label-file {
+  --border: var(--dark-2);
+  --backround: white;
+  --color: var(--dark);
+  --border-h: var(--dark);
+  --backround-h: white;
+  --color-h: var(--dark);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background-color: var(--backround);
+  width: 100%;
+  padding: 20px 28px;
+  border-radius: 12px;
+  color: var(--color);
+  user-select: none;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: -0.01em;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.label-file span {
+  color: rgba(18, 31, 48, 0.3);
+}
+
+.label-file svg {
+  display: block;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .input {
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 12px 20px;
+  }
+
+  .input::placeholder {
+    font-size: 15px;
+  }
+
+  .label-file {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 12px 20px;
+  }
+
+  .label-file::placeholder {
+    font-size: 15px;
+  }
+
+  .label-file svg {
+    width: 16px;
+    height: 16px;
+    color: var(--dark-6);
+  }
+}
+
+@media (any-hover: hover) {
+  .check-wrap label a:hover {
+    color: var(--primary);
+  }
+
+  .label-file:hover {
+    color: var(--color-h);
+    background-color: var(--backround-h);
+    border-color: var(--border-h);
+  }
+}
+
+@media (hover: none) {
+  .check-wrap label a:active {
+    color: var(--primary);
+  }
+
+  .label-file:active {
+    color: var(--color-h);
+    background-color: var(--backround-h);
+    border-color: var(--border-h);
+  }
+}

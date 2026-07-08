@@ -1,0 +1,10 @@
+.row-nav .swiper-slide {
+  box-sizing: border-box;
+  width: auto !important;
+}
+
+@media (max-width: 991px) {
+  .row-nav {
+    overflow: visible !important;
+  }
+}

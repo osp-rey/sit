@@ -1,0 +1,40 @@
+.text-b {
+  font-size: 26px;
+  line-height: 140%;
+}
+
+.text-m {
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: -0.03em;
+}
+
+.text-l {
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: -0.04em;
+}
+
+@media (max-width: 1199px) {
+  .text-b {
+    font-size: 22px;
+  }
+
+  .text-m {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-b {
+    font-size: 15px;
+  }
+
+  .text-m {
+    font-size: 15px;
+  }
+
+  .text-l {
+    font-size: 17px;
+  }
+}

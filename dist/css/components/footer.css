@@ -1,0 +1,211 @@
+.footer {
+  background-color: var(--dark);
+  color: white;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: -0.03em;
+}
+
+.footer__main {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: var(--white-4);
+  transition: color 0.3s ease;
+}
+
+.footer__main a {
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.footer__logo {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+}
+
+.footer__logo img {
+  display: block;
+  width: 100%;
+}
+
+.footer__main-content {
+  margin: 15px 0px 0px 0px;
+}
+
+.footer__main-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+  line-height: 120%;
+}
+
+.footer__main-list a {
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.footer__nav-title {
+  color: var(--white-4);
+}
+
+.footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 13px;
+}
+
+.footer__nav-list a {
+  transition: color 0.3s ease;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contacts-btn {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.footer__contacts-btn:not(:first-child) {
+  margin-top: 15px;
+}
+
+.footer__contacts-btn svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.footer__work-time {
+  font-size: 12px;
+  line-height: 160%;
+  letter-spacing: -0.01em;
+}
+
+.footer__connect-btn {
+  margin-top: 15px;
+  padding: 6px 15px !important;
+  border-radius: 10px !important;
+  font-size: 13px !important;
+  line-height: 160% !important;
+  letter-spacing: -0.01em !important;
+}
+
+@media (max-width: 991px) {
+  .footer__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    row-gap: 25px;
+  }
+
+  .footer__main {
+    grid-column: 2 span;
+  }
+
+  .footer__main-list {
+    margin-top: 0;
+    color: var(--white-4);
+    grid-column: 2 span;
+  }
+
+  .footer__contacts {
+    grid-column: 2 span;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    row-gap: 25px;
+  }
+
+  .footer__contacts-btn:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .footer__connect-btn {
+    margin-top: 0;
+    grid-column: 2 span;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__wrapper {
+    font-size: 13px;
+  }
+
+  .footer__logo {
+    width: 150px;
+  }
+
+  .footer__main-content {
+    font-size: 11px;
+    margin-top: 8px;
+  }
+
+  .footer__main-list {
+    font-size: 11px;
+    gap: 10px;
+  }
+
+  .footer__nav-list {
+    margin-top: 4px;
+    gap: 4px;
+  }
+
+  .footer__contacts-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (any-hover: hover) {
+  .footer__main a:hover {
+    color: white;
+  }
+
+  .footer__main-list a:hover {
+    color: white;
+  }
+
+  .footer__nav-list a:hover {
+    color: var(--primary);
+  }
+
+  .footer__contacts-btn:hover {
+    color: var(--primary);
+  }
+}
+
+@media (hover: none) {
+  .footer__main a:active {
+    color: white;
+  }
+
+  .footer__main-list a:active {
+    color: white;
+  }
+
+  .footer__nav-list a:active {
+    color: var(--primary);
+  }
+
+  .footer__contacts-btn:active {
+    color: var(--primary);
+  }
+}

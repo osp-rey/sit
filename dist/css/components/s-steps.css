@@ -1,0 +1,132 @@
+.s-steps__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.s-steps__item {
+  position: relative;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.s-steps__item .item-num {
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--dark-4);
+}
+
+.s-steps__item .item-img {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  max-width: 295px;
+}
+
+.s-steps__item .item-title {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  margin: 40px 0px 0px 0px;
+}
+
+.s-steps__item .item-content {
+  font-size: 18px;
+  line-height: 130%;
+  margin: 10px 0px 0px 0px;
+  color: var(--dark-5);
+}
+
+@media (max-width: 1679px) {
+  .s-steps__grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .s-steps__item {
+    grid-column: 2 span;
+  }
+
+  .s-steps__item:nth-child(4),
+  .s-steps__item:nth-child(5) {
+    grid-column: 3 span;
+  }
+}
+
+@media (max-width: 1199px) {
+  .s-steps__item {
+    padding: 20px;
+  }
+
+  .s-steps__item .item-num {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .s-steps__item .item-img {
+    width: 240px;
+    max-width: calc(100% - 45px);
+  }
+
+  .s-steps__item .item-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 991px) {
+  .s-steps__grid {
+    gap: 10px;
+  }
+
+  .s-steps__item .item-img {
+    width: 180px;
+  }
+
+  .s-steps__item .item-title {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-steps__item {
+    padding: 15px;
+  }
+
+  .s-steps__item .item-num {
+    font-size: 15px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .s-steps__item .item-info {
+    max-width: 260px;
+  }
+
+  .s-steps__item .item-title {
+    font-size: 19px;
+    margin-top: 10px;
+  }
+
+  .s-steps__item .item-content {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .s-steps__item {
+    grid-column: 3 span;
+  }
+
+  .s-steps__item:nth-child(5) {
+    grid-column: 6 span;
+  }
+}
+
+@media (max-width: 575px) {
+  .s-steps__item {
+    grid-column: 6 span !important;
+  }
+}

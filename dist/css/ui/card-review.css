@@ -1,0 +1,95 @@
+.card-review {
+  border-radius: 15px;
+  padding: 25px;
+  background-color: white;
+}
+
+.card-review__profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.card-review__profile .profile-avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.card-review__profile .profile-name {
+  font-weight: 500;
+}
+
+.card-review__profile .profile-text {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+}
+
+.card-review__profile-descr {
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  margin: 16px 0px 0px 0px;
+}
+
+.card-review__bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 15px;
+  padding-top: 20px;
+  border-top: 1px solid var(--dark-1);
+}
+
+.card-review__date {
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+}
+
+.card-review__rating {
+  display: flex;
+  gap: 2px;
+}
+
+.card-review__rating img {
+  display: block;
+  width: 18px;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .card-review {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .card-review__profile .profile-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card-review__profile .profile-text {
+    font-size: 11px;
+  }
+
+  .card-review__profile-descr {
+    font-size: 15px;
+  }
+
+  .card-review__bottom {
+    padding-top: 15px;
+  }
+
+  .card-review__date {
+    font-size: 13px;
+  }
+
+  .card-review__rating img {
+    width: 16px;
+  }
+}

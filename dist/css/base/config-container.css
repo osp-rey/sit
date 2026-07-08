@@ -1,0 +1,9 @@
+.container {
+  --content-width: 1735px;
+  --offset-width: 0px;
+  --container-width: calc(var(--content-width) + (var(--offset-width) * 2));
+  max-width: var(--container-width);
+  width: 100%;
+  padding: 0 var(--offset-width);
+  margin: 0 auto;
+}

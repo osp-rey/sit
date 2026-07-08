@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    @@include("components/head.html")
+  </head>
+  <body class="body">
+    @@include("components/header.html") @@include("components/burger.html")
+    @@include("components/modals.html")
+
+    <main>
+      <section class="s-banner sect-m">
+        <div class="g-wrap s-banner__wrap">
+          <div
+            style="
+              background: url(&quot;@img/banner-service-2.jpg&quot;) center /
+                cover no-repeat;
+            "
+            class="s-banner__bg"
+          >
+            <div class="inside"></div>
+          </div>
+          <div class="container">
+            <div class="breadcrumbs _blur">
+              <div class="breadcrumbs-row">
+                <a href="/" class="breadrumbs-btn">
+                  <span>Главная</span>
+                  <svg class="arrow">
+                    <use xlink:href="img/icons/icons.svg#icon-next"></use>
+                  </svg>
+                </a>
+                <a href="/" class="breadrumbs-btn">
+                  <span>Услуги</span>
+                  <svg class="arrow">
+                    <use xlink:href="img/icons/icons.svg#icon-next"></use>
+                  </svg>
+                </a>
+                <div class="breadrumbs-btn">
+                  <span>Литьё на ТПА</span>
+                </div>
+              </div>
+            </div>
+            <div class="s-banner__info">
+              <h1 class="m-title s-banner__title">Литьё на ТПА</h1>
+              <div class="content-box text-b s-banner__content">
+                <p>
+                  Проектируем и изготавливаем пресс-формы, которые удобно
+                  обслуживать и стабильно использовать в серийном производстве —
+                  с отладкой до результата «по ТЗ».
+                </p>
+              </div>
+              <div class="s-banner__buttons">
+                <a href="#modal-feedback" data-fancybox class="btn-s">
+                  Связаться с нами
+                </a>
+                <a href="#" class="btn-s _outline-white">
+                  <span>Продукция</span>
+                  <svg class="arrow">
+                    <use xlink:href="img/icons/icons.svg#icon-next"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-content sect-m">
+        <div class="g-wrap">
+          <div class="container">
+            <div class="s-content__wrapper">
+              <div class="s-content__info">
+                <h2 class="s-title s-content__title">Что мы делаем</h2>
+                <div class="content-box text-b s-content__content">
+                  <p>
+                    СНСГРУПП — производственная команда полного цикла:
+                    проектирование и изготовление пресс-форм, литьё пластмасс на
+                    ТПА и экструзионно-выдувное формование. Мы берём задачу «под
+                    ключ»: от ТЗ/чертежей/образца до стабильной серии и
+                    повторяемого качества.
+                  </p>
+                  <p>
+                    Мы ценим точность, сроки и прозрачность. Перед запуском в
+                    серию проводим отработку технологии, подбираем материал.
+                  </p>
+                  <p>
+                    СНСГРУПП — производственная команда полного цикла:
+                    проектирование и изготовление пресс-форм, литьё пластмасс на
+                    ТПА и экструзионно-выдувное формование. Мы берём задачу «под
+                    ключ»: от ТЗ/чертежей/образца до стабильной серии и
+                    повторяемого качества.
+                  </p>
+                  <p>
+                    Мы ценим точность, сроки и прозрачность. Перед запуском в
+                    серию проводим отработку технологии, подбираем материал. Мы
+                    ценим точность, сроки и прозрачность. Перед запуском в серию
+                    проводим отработку технологии, подбираем материал.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="@img/content-2.png"
+                alt="image"
+                class="s-content__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      @@include("components/repeat/s-adv-simple.html")
+      @@include("components/repeat/s-about-production.html")
+      @@include("components/s-stages-work.html")
+      @@include("components/s-data.html")
+      @@include("components/s-products.html")
+      @@include("components/repeat/s-connect-service.html")
+      @@include("components/s-reviews.html") @@include("components/s-faq.html")
+      @@include("components/s-brief.html")
+    </main>
+
+    @@include("components/footer.html")
+
+    <script src="./js/app.js?ver=@@versions.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.body-hidden {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.body {
+  font-family: "TikTokSans", sans-serif;
+  font-size: 18px;
+  color: var(--dark);
+}
+
+@media (max-width: 991px) {
+  .body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .body {
+    font-size: 15px;
+  }
+}

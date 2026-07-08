@@ -1,0 +1,106 @@
+.b-title {
+  font-weight: 600;
+  font-size: 90px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  margin: 0;
+}
+
+.m-title {
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  margin: 0;
+}
+
+.s-title {
+  font-weight: 500;
+  font-size: 67px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.s-title span {
+  background: linear-gradient(to bottom, transparent 12%, var(--dark) 12%);
+  padding: 0 5px;
+  color: white;
+}
+
+.l-title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+@media (max-width: 1539px) {
+  .b-title {
+    font-size: 80px;
+  }
+
+  .m-title {
+    font-size: 70px;
+  }
+
+  .s-title {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 1365px) {
+  .b-title {
+    font-size: 60px;
+  }
+
+  .m-title {
+    font-size: 54px;
+  }
+
+  .s-title {
+    font-size: 44px;
+  }
+
+  .l-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 991px) {
+  .b-title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .b-title {
+    font-size: 40px;
+    line-height: 110%;
+  }
+
+  .m-title {
+    font-size: 40px;
+  }
+
+  .s-title {
+    font-size: 30px;
+  }
+
+  .l-title {
+    font-size: 20px;
+    line-height: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-title {
+    font-size: 35px;
+    line-height: 100%;
+  }
+
+  .l-title {
+    font-size: 19px;
+  }
+}

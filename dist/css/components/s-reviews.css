@@ -1,0 +1,137 @@
+.s-reviews__head-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.s-reviews__content {
+  margin: 0;
+}
+
+.s-reviews__toggle {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 30px;
+}
+
+.s-reviews__service {
+  display: flex;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.s-reviews__service .service-logo {
+  display: block;
+  width: 100px;
+}
+
+.s-reviews__service .service-separator {
+  height: auto;
+  width: 1px;
+  background-color: var(--dark-1);
+}
+
+.s-reviews__service .service-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: center;
+}
+
+.s-reviews__service .service-rating-num {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.04em;
+}
+
+.s-reviews__service .service-stars {
+  display: flex;
+  gap: 1px;
+}
+
+.s-reviews__service .service-stars img {
+  display: block;
+  pointer-events: none;
+  width: 18px;
+}
+
+.s-reviews__slider .swiper-slide {
+  box-sizing: border-box;
+}
+
+.s-reviews__btn-consult {
+  margin-top: 30px;
+}
+
+.s-reviews__btn-more {
+  margin-top: 30px;
+}
+
+@media (min-width: 575px) {
+  .s-reviews__btn-more {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .s-reviews__head-row {
+    flex-wrap: wrap;
+  }
+
+  .s-reviews__toggle {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-reviews__service .service-logo {
+    width: 80px;
+  }
+
+  .s-reviews__service .service-rating-num {
+    font-size: 18px;
+  }
+
+  .s-reviews__service .service-stars img {
+    width: 16px;
+  }
+
+  .s-reviews__btn-consult {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .s-reviews__head-row .slider-nav {
+    display: none;
+  }
+
+  .s-reviews__slider .swiper-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .s-reviews__slider .swiper-slide {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .s-reviews__slider .swiper-slide:nth-child(n+3) {
+    opacity: 0;
+    transform: translateY(20px);
+    display: none !important;
+  }
+
+  .s-reviews__slider .swiper-slide:nth-child(n+3)._active {
+    display: block !important;
+  }
+
+  .s-reviews__slider .swiper-slide:nth-child(n+3)._show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

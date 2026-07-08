@@ -1,0 +1,119 @@
+.s-production__content {
+  max-width: 1390px;
+  margin-top: 20px;
+}
+
+.s-production__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.s-production__item {
+  padding: 10px 10px 30px 10px;
+  background-color: white;
+  border-radius: var(--radius-m);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.s-production__item .item-img {
+  display: block;
+  width: 235px;
+  flex-shrink: 0;
+}
+
+.s-production__item .item-body {
+  padding: 0px 14px;
+  margin-top: 20px;
+}
+
+.s-production__item .item-content {
+  margin: 10px 0px 0px 0px;
+  color: var(--dark-4);
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 1365px) {
+  .s-production__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .s-production__item .item-img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-production__content {
+    margin-top: 10px;
+  }
+
+  .s-production__grid {
+    gap: 10px;
+  }
+
+  .s-production__item {
+    padding: 15px 20px 20px 20px;
+  }
+
+  .s-production__item .item-img {
+    width: 130px;
+  }
+
+  .s-production__item .item-body {
+    padding: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .s-production__grid {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .s-production__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .s-production__item .item-img {
+    width: 65px;
+  }
+
+  .s-production__item .item-body {
+    margin-top: 0;
+  }
+
+  .s-production__item .item-content {
+    font-size: 13px;
+  }
+}
+
+@media (any-hover: hover) {
+  .s-production__item:hover {
+    background-color: var(--primary);
+    color: white;
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .s-production__item:hover .item-content {
+    color: white;
+  }
+}
+
+@media (hover: none) {
+  .s-production__item:active {
+    background-color: var(--primary);
+    color: white;
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .s-production__item:active .item-content {
+    color: white;
+  }
+}

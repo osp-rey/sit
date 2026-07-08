@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="./files/favicon.svg" />
+<link rel="stylesheet" href="./files/fancybox/fancybox.min.css" />
+<link rel="stylesheet" href="./files/swiper/swiper.min.css" />
+<link rel="stylesheet" href="./css/main.css?ver=mrbrxax6" />
+<title>OSPREY</title>
+
+</head>
+<body class="body">
+
+  <header class="header">
+  <div class="header__main">
+    <div class="g-wrap header__inside">
+      <div class="container">
+        <div class="header__inside-wrap">
+          <div class="header__wrapper">
+            <div class="header__logo-wrap">
+              <a href="/" class="header__logo">
+                <img src="img/logo.svg" alt="image" class="logo-primary" />
+                <img src="img/logo-dark.svg" alt="image" class="logo-dark" />
+              </a>
+              <div class="header__logo-descr">
+                Производство пресс-форм с доставкой по РФ
+              </div>
+            </div>
+            <nav class="header__nav">
+              <div data-header-drop-btn="services" class="header__services-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-burger"></use>
+                </svg>
+                <span>Услуги</span>
+              </div>
+              <ul class="list header__list">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Продукция</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header__contacts">
+              <a href="mailto:info@cncgroup.ru" class="header__social-btn _mail">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-mail"></use>
+                </svg>
+                <span>info@cncgroup.ru</span>
+              </a>
+              <a
+                href="#"
+                rel="nofollow"
+                target="_blank"
+                class="header__social-btn _max"
+              >
+                <img src="img/max.svg" alt="icon" />
+                <span>MAX</span>
+              </a>
+              <div class="header__contacts-main">
+                <a href="tel:+74957870000" class="header__tel">
+                  +7 (495) 787 00 00
+                </a>
+                <div class="header__address">Пн–пт с 9 до 18</div>
+              </div>
+              <a href="#modal-feedback" data-fancybox class="btn-b header__btn">
+                Заказать звонок
+              </a>
+              <a href="tel:+74957870000" class="header__tel-mob">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-connect"></use>
+                </svg>
+              </a>
+              <div class="header__burger-btn" id="burger-toggle">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-burger"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="header__drop" hidden data-header-drop="services">
+            <div class="header__drop-grid">
+              <a href="#" class="header__drop-item">
+                <img src="img/header-drop.png" alt="logo" class="item-img" />
+                <div class="item-body">
+                  <div class="item-title">Пресс-формы</div>
+                  <p class="item-content">
+                    Проектирование и изготовление оснастки под литьё и выдув
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="header__drop-item">
+                <img src="img/header-drop.png" alt="logo" class="item-img" />
+                <div class="item-body">
+                  <div class="item-title">Литьё на ТПА</div>
+                  <p class="item-content">
+                    Серийное литьё пластмасс: режимы, качество, упаковка
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="header__drop-item">
+                <img src="img/header-drop.png" alt="logo" class="item-img" />
+                <div class="item-body">
+                  <div class="item-title">Формы для выдува</div>
+                  <p class="item-content">
+                    Оснастка для экструзионного выдува: ресурс, стабильность
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="header__drop-item">
+                <img src="img/header-drop.png" alt="logo" class="item-img" />
+                <div class="item-body">
+                  <div class="item-title">Выдув на экструдере</div>
+                  <p class="item-content">
+                    Экструзионно выдувное формование изделий и тары
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<aside class="header-drop-backdrop"></aside>
+
+  <aside class="burger" id="burger">
+  <div class="burger__services">
+    <a href="#" class="burger__service-item">
+      <img src="img/header-drop.png" alt="image" />
+      <div class="item-name">Пресс-формы</div>
+    </a>
+    <a href="#" class="burger__service-item">
+      <img src="img/header-drop.png" alt="image" />
+      <div class="item-name">Литьё на ТПА</div>
+    </a>
+    <a href="#" class="burger__service-item">
+      <img src="img/header-drop.png" alt="image" />
+      <div class="item-name">
+        Формы
+        <br />
+        для выдува
+      </div>
+    </a>
+    <a href="#" class="burger__service-item">
+      <img src="img/header-drop.png" alt="image" />
+      <div class="item-name">Выдув на экструдере</div>
+    </a>
+  </div>
+  <ul class="list burger__list">
+    <li><a href="#">О компании</a></li>
+    <li><a href="#">Продукция</a></li>
+    <li><a href="#">Контакты</a></li>
+    <li class="social">
+      <a href="tel:+74957870000">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+        </svg>
+        <span>+7 (495) 787 00 00</span>
+      </a>
+    </li>
+    <li class="social">
+      <a href="mailto:info@cncgroup.ru">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-mail"></use>
+        </svg>
+        <span>info@cncgroup.ru</span>
+      </a>
+    </li>
+    <li class="social">
+      <a href="#" target="_blank" rel="nofollow">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-max"></use>
+        </svg>
+        <span>MAX</span>
+      </a>
+    </li>
+  </ul>
+</aside>
+
+  <aside>
+  <div class="modal" id="modal-feedback">
+    <div data-fancybox-close class="modal__close">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#icon-close"></use>
+      </svg>
+    </div>
+    <div class="modal__body">
+      <div class="modal__head">
+        <div class="modal__title">Заказать звонок</div>
+        <p class="modal__content">
+          Оставьте контакты — менеджер перезвонит, чтобы ответить на ваши
+          вопросы
+        </p>
+      </div>
+      <form action="#" class="modal__form">
+        <div class="form-control">
+          <input
+            type="text"
+            placeholder="Ваше имя"
+            id="modal-feedback-name"
+            required
+            class="input"
+          />
+        </div>
+        <div class="form-control">
+          <input
+            type="tel"
+            placeholder="Телефон"
+            id="modal-feedback-tel"
+            required
+            class="input"
+          />
+        </div>
+        <button type="submit" class="btn-s">Оставить заявку</button>
+        <div class="check-wrap">
+          <input type="checkbox" id="modal-feedback-policy" />
+          <label for="modal-feedback-policy">
+            <span>
+              Я даю согласие ООО «СНСГРУПП» на обработку моих
+              <a href="#" target="_blank">персональных данных</a>
+              в целях обработки обращения, обратного звонка и предоставления
+              консультации в соответствии с
+              <a href="#" target="_blank">
+                Политикой обработки персональных данных
+              </a>
+              .
+            </span>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</aside>
+
+  
+  <main>
+    <section class="s-notfound sect-m">
+  <div class="g-wrap s-notfound__wrap">
+    <div class="s-notfound__inside">
+      <img src="img/notfound.png" alt="image" class="s-notfound__img" />
+      <div class="m-title s-notfound__title">Страница не найдена</div>
+      <p class="text-b s-notfound__content">
+        Вы перешли по устаревшей или сломанной ссылке.
+        <a href="/">Перейдите на главную</a>
+        или ознакомьтесь с услугами ниже.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <section class="s-services sect-m">
+  <div class="g-wrap _top-off">
+    <div class="container">
+      <div class="s-services__grid">
+        <a href="#" class="s-services__item _simple">
+          <img src="img/service-img.png" alt="image" class="item-img" />
+          <div class="item-body">
+            <div class="item-title l-title">Пресс-формы</div>
+            <div class="item-content">
+              Проектирование и изготовление оснастки под литьё и выдув
+            </div>
+          </div>
+        </a>
+        <a href="#" class="s-services__item _simple">
+          <img src="img/service-img.png" alt="image" class="item-img" />
+          <div class="item-body">
+            <div class="item-title l-title">Литьё на ТПА</div>
+            <div class="item-content">
+              Серийное литьё пластмасс: режимы, качество, упаковка
+            </div>
+          </div>
+        </a>
+        <a href="#" class="s-services__item _simple">
+          <img src="img/service-img.png" alt="image" class="item-img" />
+          <div class="item-body">
+            <div class="item-title l-title">Формы для выдува</div>
+            <div class="item-content">
+              Оснастка для экструзионного выдува: ресурс, стабильность
+            </div>
+          </div>
+        </a>
+        <a href="#" class="s-services__item _simple">
+          <img src="img/service-img.png" alt="image" class="item-img" />
+          <div class="item-body">
+            <div class="item-title l-title">Выдув на экструдере</div>
+            <div class="item-content">
+              Экструзионно выдувное формование изделий и тары
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="s-brief sect-m">
+  <div class="g-wrap bg-ghost-2">
+    <div class="container">
+      <div class="s-brief__wrapper">
+        <div class="s-brief__info">
+          <h2 class="s-title s-brief__title">
+            Опишите задачу — мы уточним ТЗ
+            <br />
+            и
+            <span>предложим решение</span>
+          </h2>
+          <p class="text-b s-brief__content">
+            Можно приложить чертёж, 3D, фото образца или спецификацию. Если
+            данных пока мало — напишите, что есть: назначение изделия, материал,
+            тираж, требования к поверхности/прочности.
+          </p>
+          <div class="s-brief__adv">
+            <div class="s-brief__adv-item">
+              <img src="img/check-fill.svg" alt="image" class="item-icon" />
+              <div class="item-text">
+                Предложим лучшие
+                <br />
+                условия на рынке
+              </div>
+            </div>
+            <div class="s-brief__adv-item">
+              <img src="img/two-play.svg" alt="image" class="item-icon" />
+              <div class="item-text">
+                Обеспечим полное сопровождение
+                <br />
+                от начала проекта до выхода в тираж
+              </div>
+            </div>
+          </div>
+        </div>
+        <form action="#" class="s-brief__form">
+          <div class="form-grid">
+            <div class="form-control">
+              <input
+                type="text"
+                placeholder="Ваше имя"
+                id="brief-name"
+                class="input"
+              />
+            </div>
+            <div class="form-control">
+              <input
+                type="tel"
+                placeholder="Телефон"
+                id="brief-tel"
+                class="input"
+              />
+            </div>
+            <div class="form-control">
+              <input
+                type="email"
+                placeholder="Эл. почта"
+                id="brief-mail"
+                class="input"
+              />
+            </div>
+            <div class="form-control">
+              <input type="file" id="brief-file" class="input-file" />
+              <label for="brief-file" class="label-file">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-clip"></use>
+                </svg>
+                <div class="label-file-name">
+                  Приложить файл
+                  <span>(не обязательно)</span>
+                </div>
+              </label>
+            </div>
+            <div class="form-control _full">
+              <textarea
+                rows="5"
+                placeholder="Ваше сообщение"
+                class="input"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-nav">
+            <button type="submit" class="btn-s">Оставить заявку</button>
+            <div class="check-wrap">
+              <input type="checkbox" id="brief-policy" />
+              <label for="brief-policy">
+                <span>
+                  Я даю согласие ООО «СНСГРУПП» на обработку моих
+                  <a href="#" target="_blank">персональных данных</a>
+                  в целях обработки обращения, обратного звонка и предоставления
+                  консультации в соответствии с
+                  <a href="#" target="_blank">
+                    Политикой обработки персональных данных
+                  </a>
+                  .
+                </span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+  <div class="g-wrap">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__main">
+          <a href="/" class="footer__logo">
+            <img src="img/logo-white.svg" alt="logo" />
+          </a>
+          <p class="footer__main-content">
+            Производство пресс-форм с доставкой по РФ
+          </p>
+          <ul data-da=".footer__wrapper, 991" class="list footer__main-list">
+            <li><a href="#" target="_blank">Политика конфиденциальности</a></li>
+            <li>
+              <a href="#" target="_blank">Обработка персональных данных</a>
+            </li>
+            <li><span>© 2026 ООО «СНСГРУПП». Все права защищены</span></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <div class="footer__nav-title">Услуги</div>
+          <ul class="list footer__nav-list">
+            <li><a href="#">Пресс-формы</a></li>
+            <li><a href="#">Литьё на ТПА</a></li>
+            <li><a href="#">Выдув на экструдере</a></li>
+            <li><a href="#">Формы для выдува</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <div class="footer__nav-title">Меню</div>
+          <ul class="list footer__nav-list">
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Продукция</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <a href="mailto:info@cncgroup.ru" class="footer__contacts-btn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-mail-fill"></use>
+            </svg>
+            <span>info@cncgroup.ru</span>
+          </a>
+          <a href="#" target="_blank" class="footer__contacts-btn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-max"></use>
+            </svg>
+            <span>MAX</span>
+          </a>
+          <a
+            href="tel:+74957870000"
+            target="_blank"
+            class="footer__contacts-btn"
+          >
+            <span>+7 (495) 787 00 00</span>
+          </a>
+          <div class="footer__work-time">Пн–пт с 9 до 18</div>
+          <a
+            href="#modal-feedback"
+            data-fancybox
+            class="btn-s _white footer__connect-btn"
+          >
+            Заказать звонок
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./files/fancybox/fancybox.min.js"></script>
+<script src="./files/swiper/swiper.min.js"></script>
+<script src="./files/inputmask/inputmask.min.js"></script>
+<script src="./files/just-validate/just-validate.min.js"></script>
+
+  
+  <script src="./js/app.js?ver=mrbrxax6"></script>
+</body>
+</html>

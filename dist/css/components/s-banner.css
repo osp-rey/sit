@@ -1,0 +1,135 @@
+.s-banner__wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  min-height: 650px;
+}
+
+.s-banner__wrap::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(270deg, rgba(31, 40, 54, 0) 42.49%, #1f2836 100%);
+  z-index: -1;
+}
+
+.s-banner__wrap .container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.s-banner__wrap .breadcrumbs {
+  margin: 0px 0px 35px 0px !important;
+}
+
+.s-banner__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.s-banner__bg .inside {
+  width: 100%;
+  height: 100%;
+}
+
+.s-banner__info {
+  margin-top: auto;
+  max-width: 770px;
+}
+
+.s-banner__content {
+  margin-top: 20px;
+}
+
+.s-banner__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 35px;
+}
+
+@media (max-width: 1365px) {
+  .s-banner__wrap::before {
+    background: linear-gradient(270deg, rgba(31, 40, 54, 0) 27.13%, #1f2836 65.22%);
+  }
+}
+
+@media (max-width: 1199px) {
+  .s-banner__wrap {
+    min-height: 550px;
+  }
+
+  .s-banner__info {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 991px) {
+  .s-banner__wrap {
+    min-height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .s-banner__info {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-banner__wrap {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .s-banner__info {
+    max-width: 405px;
+  }
+
+  .s-banner__content {
+    margin-top: 10px;
+  }
+
+  .s-banner__buttons {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .s-banner__wrap {
+    padding: 15px;
+    padding-bottom: 24px;
+    background-color: var(--dark);
+  }
+
+  .s-banner__wrap::before {
+    display: none;
+  }
+
+  .s-banner__wrap .breadcrumbs {
+    margin-bottom: 160px !important;
+  }
+
+  .s-banner__bg {
+    height: 220px;
+    width: 500px;
+    top: 0;
+    right: 0;
+    left: auto;
+    bottom: auto;
+  }
+
+  .s-banner__bg .inside {
+    background: linear-gradient(0deg, #1f262e 0%, rgba(31, 38, 46, 0) 57.51%);
+  }
+}
+
+@media (max-width: 480px) {
+  .s-banner__title {
+    font-size: 34px;
+  }
+}

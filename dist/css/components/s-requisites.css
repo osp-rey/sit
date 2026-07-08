@@ -1,0 +1,37 @@
+.s-requisites__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 16px;
+  gap: 60px;
+}
+
+.s-requisites__text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  line-height: 150%;
+}
+
+@media (max-width: 1365px) {
+  .s-requisites__grid {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .s-requisites__grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-requisites__grid {
+    margin-top: 10px;
+    gap: 8px;
+  }
+
+  .s-requisites__text {
+    gap: 8px;
+  }
+}
