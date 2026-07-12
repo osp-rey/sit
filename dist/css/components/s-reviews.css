@@ -77,7 +77,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .s-reviews__head-row {
     flex-wrap: wrap;
   }

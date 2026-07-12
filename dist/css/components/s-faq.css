@@ -1,7 +1,3 @@
-.s-faq__wrap {
-  padding-top: 0 !important;
-}
-
 .s-faq__wrapper {
   display: flex;
   align-items: start;
@@ -29,14 +25,11 @@
 }
 
 .s-faq__spoller {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  padding: 20px;
   border-radius: 15px;
   background-color: var(--ghost-2);
   border: 1px solid var(--ghost-2);
   gap: 30px;
+  cursor: pointer;
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
@@ -88,6 +81,13 @@
   transform: rotate(90deg);
 }
 
+.s-faq__spoller-inside {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 20px;
+}
+
 .s-faq__spoller-main {
   flex: 0 1 705px;
 }
@@ -134,11 +134,7 @@
   }
 }
 
-@media (max-width: 991px) {
-  .s-faq__spoller {
-    padding: 15px;
-  }
-
+@media (max-width: 1024px) {
   .s-faq__spoller .rect {
     width: 40px;
     height: 40px;
@@ -147,6 +143,10 @@
   .s-faq__spoller .rect::before,
   .s-faq__spoller .rect::after {
     width: 14px;
+  }
+
+  .s-faq__spoller-inside {
+    padding: 15px;
   }
 
   .s-faq__spoller-btn {
@@ -162,7 +162,6 @@
 @media (max-width: 768px) {
   .s-faq__spoller {
     border-radius: 10px;
-    gap: 15px;
   }
 
   .s-faq__spoller .rect {
@@ -174,6 +173,10 @@
   .s-faq__spoller .rect::before,
   .s-faq__spoller .rect::after {
     width: 12px;
+  }
+
+  .s-faq__spoller-inside {
+    gap: 15px;
   }
 
   .s-faq__spoller-body {

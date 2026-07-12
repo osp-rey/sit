@@ -40,7 +40,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .s-production__item .item-img {
     width: 180px;
   }
@@ -87,10 +87,6 @@
 
   .s-production__item .item-body {
     margin-top: 0;
-  }
-
-  .s-production__item .item-content {
-    font-size: 13px;
   }
 }
 

@@ -440,6 +440,7 @@ template {
   --ghost: #f7f8f9;
   --ghost-2: #f6f7f8;
   --white-1: rgba(255, 255, 255, 0.1);
+  --white-2: rgba(255, 255, 255, 0.2);
   --white-3: rgba(255, 255, 255, 0.3);
   --white-4: rgba(255, 255, 255, 0.4);
   --red: #ff4000;
@@ -648,7 +649,7 @@ img {
 
 .b-title {
   font-weight: 600;
-  font-size: 90px;
+  font-size: 85px;
   line-height: 100%;
   letter-spacing: -0.05em;
   margin: 0;
@@ -758,6 +759,11 @@ img {
 
 .content-box > *:not(:last-child) {
   margin-bottom: 0.5em;
+}
+
+.content-box a {
+  color: var(--primary);
+  text-decoration: underline;
 }
 
 .slider-nav {
@@ -1127,8 +1133,8 @@ textarea.input {
   --color: var(--white-4);
   --background-h: var(--dark-6);
   --color-h: white;
-  --color-d: var(--white-3);
-  --background-d: var(--dark-4);
+  --color-d: var(--white-2);
+  --background-d: var(--dark-3);
   backdrop-filter: blur(10px);
 }
 
@@ -1148,7 +1154,7 @@ textarea.input {
   --color: var(--dark-6);
   --background-h: var(--dark-3);
   --color-h: var(--dark);
-  --color-d: var(--dark);
+  --color-d: var(--dark-4);
   --background-d: var(--dark-1);
   display: flex;
   align-items: center;
@@ -1256,6 +1262,7 @@ div.breadrumbs-btn {
   left: 0;
   right: 0;
   border-radius: 20px;
+  overflow: visible;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   transition: bacdrop-filter 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, margin 0.3s ease, border-radius 0.3s ease;
@@ -1446,7 +1453,7 @@ div.breadrumbs-btn {
 }
 
 .header__drop-item .item-content {
-  font-size: 22px;
+  font-size: 19px;
   line-height: 140%;
   margin: 10px 0px 0px 0px;
   color: var(--dark-4);
@@ -1512,6 +1519,7 @@ div.breadrumbs-btn {
 
 .burger__service-item .item-name {
   margin-top: 10px;
+  font-weight: 500;
 }
 
 .burger__list {
@@ -1638,7 +1646,7 @@ div.breadrumbs-btn {
 
 .s-hero__content {
   max-width: 735px;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 140%;
   margin: 20px 0px 0px 0px;
 }
@@ -1703,7 +1711,7 @@ div.breadrumbs-btn {
 .s-about__wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 25px;
 }
 
 .s-about__wrapper._simple {
@@ -1798,6 +1806,10 @@ div.breadrumbs-btn {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s linear;
+}
+
+.s-adv__title {
+  user-select: none;
 }
 
 .s-adv__content {
@@ -2091,10 +2103,6 @@ div.breadrumbs-btn {
   color: var(--dark-5);
 }
 
-.s-faq__wrap {
-  padding-top: 0 !important;
-}
-
 .s-faq__wrapper {
   display: flex;
   align-items: start;
@@ -2122,14 +2130,11 @@ div.breadrumbs-btn {
 }
 
 .s-faq__spoller {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  padding: 20px;
   border-radius: 15px;
   background-color: var(--ghost-2);
   border: 1px solid var(--ghost-2);
   gap: 30px;
+  cursor: pointer;
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
@@ -2179,6 +2184,13 @@ div.breadrumbs-btn {
 
 .s-faq__spoller .rect::before {
   transform: rotate(90deg);
+}
+
+.s-faq__spoller-inside {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .s-faq__spoller-main {
@@ -2510,7 +2522,7 @@ div.breadrumbs-btn {
 }
 
 .s-product__spec-wrap {
-  margin-top: 5px;
+  margin-top: 50px;
 }
 
 .s-contacts__title {
@@ -3081,7 +3093,7 @@ div.breadrumbs-btn {
 .footer__wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 40px;
   font-weight: 500;
   font-size: 15px;
   line-height: 160%;
@@ -3202,7 +3214,7 @@ div.breadrumbs-btn {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1025px) {
   .header__burger-btn {
     display: none;
   }
@@ -3248,6 +3260,12 @@ div.breadrumbs-btn {
 
   .s-stages__item:nth-child(4n+1) .item-decor .line-l {
     display: block;
+  }
+}
+
+@media (min-width: 1366px) {
+  .s-about__title {
+    letter-spacing: -0.05em;
   }
 }
 
@@ -3735,7 +3753,7 @@ div.breadrumbs-btn {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   :root {
     --radius: 12px;
     --radius-m: 12px;
@@ -3809,6 +3827,10 @@ div.breadrumbs-btn {
     margin-top: 30px;
   }
 
+  .s-about__gallery {
+    margin-top: 30px;
+  }
+
   .s-products__nav {
     margin-top: 25px;
   }
@@ -3843,10 +3865,6 @@ div.breadrumbs-btn {
     font-size: 24px;
   }
 
-  .s-faq__spoller {
-    padding: 15px;
-  }
-
   .s-faq__spoller .rect {
     width: 40px;
     height: 40px;
@@ -3855,6 +3873,10 @@ div.breadrumbs-btn {
   .s-faq__spoller .rect::before,
   .s-faq__spoller .rect::after {
     width: 14px;
+  }
+
+  .s-faq__spoller-inside {
+    padding: 15px;
   }
 
   .s-faq__spoller-btn {
@@ -3872,6 +3894,13 @@ div.breadrumbs-btn {
 
   .s-brief__adv {
     margin-top: 30px;
+  }
+
+  .s-brief__form .form-nav {
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 8px;
+    gap: 25px;
   }
 
   .s-catalog .g-wrap {
@@ -4240,10 +4269,6 @@ div.breadrumbs-btn {
     font-size: 15px;
   }
 
-  .s-about__gallery {
-    margin-top: 30px;
-  }
-
   .s-about__gallery .slider-nav {
     left: 10px;
     bottom: 10px;
@@ -4258,7 +4283,7 @@ div.breadrumbs-btn {
   }
 
   .s-adv__item .item-content {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .s-adv__item-simple {
@@ -4339,7 +4364,6 @@ div.breadrumbs-btn {
 
   .s-faq__spoller {
     border-radius: 10px;
-    gap: 15px;
   }
 
   .s-faq__spoller .rect {
@@ -4351,6 +4375,10 @@ div.breadrumbs-btn {
   .s-faq__spoller .rect::before,
   .s-faq__spoller .rect::after {
     width: 12px;
+  }
+
+  .s-faq__spoller-inside {
+    gap: 15px;
   }
 
   .s-faq__spoller-body {
@@ -4384,13 +4412,6 @@ div.breadrumbs-btn {
 
   .s-brief__form .form-grid .form-control {
     grid-column: 2 span;
-  }
-
-  .s-brief__form .form-nav {
-    flex-direction: column;
-    gap: 25px;
-    margin-top: 8px;
-    gap: 25px;
   }
 
   .s-catalog__head-content {
@@ -4945,10 +4966,6 @@ div.breadrumbs-btn {
     margin-top: 0;
   }
 
-  .s-production__item .item-content {
-    font-size: 13px;
-  }
-
   .s-product__slider .slider-arrow {
     display: none !important;
   }
@@ -5073,7 +5090,11 @@ div.breadrumbs-btn {
 
 @media (max-width: 480px) {
   .burger__service-item img {
-    width: 50px;
+    width: 70px;
+  }
+
+  .s-services__item .item-content {
+    max-width: 230px;
   }
 
   .s-banner__title {
@@ -5081,7 +5102,7 @@ div.breadrumbs-btn {
   }
 }
 
-@media (max-width: 1199px) and (min-width: 992px) {
+@media (max-width: 1199px) and (min-width: 1025px) {
   .header__logo-descr {
     display: none;
   }
@@ -5098,6 +5119,10 @@ div.breadrumbs-btn {
     background-color: var(--background-h);
     border-color: var(--border-h);
     color: var(--color-h);
+  }
+
+  .content-box a:hover {
+    text-decoration: none;
   }
 
   .slider-arrow:hover {
@@ -5243,6 +5268,10 @@ div.breadrumbs-btn {
     background-color: var(--background-h);
     border-color: var(--border-h);
     color: var(--color-h);
+  }
+
+  .content-box a:active {
+    text-decoration: none;
   }
 
   .slider-arrow:active {

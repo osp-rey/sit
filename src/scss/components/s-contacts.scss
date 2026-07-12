@@ -92,7 +92,7 @@
   &__map-wrap {
     max-width: calc(100% - 28px);
     margin: 5px auto 0px auto;
-    @media (min-width: 992px) {
+    @media (min-width: 1025px) {
       display: none;
     }
     @include tablet-min {

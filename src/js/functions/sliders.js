@@ -32,7 +32,7 @@ export default function sliders() {
 
   if (
     productsNavSliders.length &&
-    window.matchMedia("(max-width: 991px)").matches
+    window.matchMedia("(max-width: 1024px)").matches
   ) {
     productsNavSliders.forEach((slider) => {
       const swiper = new Swiper(slider, {
@@ -72,7 +72,7 @@ export default function sliders() {
             spaceBetween: 16,
             slidesPerView: +slider.dataset.startPreview || 6,
           },
-          992: {
+          1025: {
             spaceBetween: 16,
             slidesPerView: 5,
           },
@@ -98,7 +98,7 @@ export default function sliders() {
 
   const reviewsSlider = document.querySelector(".s-reviews__slider");
 
-  if (reviewsSlider && window.matchMedia("(min-width: 992px)").matches) {
+  if (reviewsSlider && window.matchMedia("(min-width: 576px)").matches) {
     const swiper = new Swiper(reviewsSlider, {
       speed: 900,
       spaceBetween: 10,
@@ -112,7 +112,7 @@ export default function sliders() {
           spaceBetween: 16,
           slidesPerView: 4,
         },
-        992: {
+        1025: {
           spaceBetween: 16,
           slidesPerView: 3,
         },

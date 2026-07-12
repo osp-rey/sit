@@ -2,6 +2,9 @@
 @use "../base/media" as *;
 
 .s-adv {
+  &__title {
+    user-select: none;
+  }
   &__content {
     max-width: 1100px;
     margin: 10px 0px 0px 0px;
@@ -60,7 +63,7 @@
         max-width: none;
       }
       @include tablet {
-        font-size: 13px;
+        font-size: 15px;
       }
     }
   }

@@ -132,7 +132,7 @@
         flex-shrink: 0;
       }
 
-      @include tablet {
+      @include laptop-min {
         flex-direction: column;
         gap: 25px;
         margin-top: 8px;

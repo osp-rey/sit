@@ -26,7 +26,7 @@
     opacity: 1;
     visibility: visible;
   }
-  @media (min-width: 992px) {
+  @media (min-width: 1025px) {
     display: none;
   }
 
@@ -53,12 +53,13 @@
       display: block;
       width: 80px;
       @include mobile {
-        width: 50px;
+        width: 70px;
       }
     }
 
     .item-name {
       margin-top: 10px;
+      font-weight: 500;
     }
   }
   &__list {

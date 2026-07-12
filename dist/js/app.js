@@ -493,7 +493,7 @@
             });
         }
         const productsNavSliders = document.querySelectorAll(".s-products__slider-nav");
-        if (productsNavSliders.length && window.matchMedia("(max-width: 991px)").matches) {
+        if (productsNavSliders.length && window.matchMedia("(max-width: 1024px)").matches) {
             productsNavSliders.forEach(slider => {
                 const swiper = new Swiper(slider, {
                     speed: 900,
@@ -527,7 +527,7 @@
                             spaceBetween: 16,
                             slidesPerView: +slider.dataset.startPreview || 6
                         },
-                        992: {
+                        1025: {
                             spaceBetween: 16,
                             slidesPerView: 5
                         },
@@ -551,7 +551,7 @@
             });
         }
         const reviewsSlider = document.querySelector(".s-reviews__slider");
-        if (reviewsSlider && window.matchMedia("(min-width: 992px)").matches) {
+        if (reviewsSlider && window.matchMedia("(min-width: 576px)").matches) {
             const swiper = new Swiper(reviewsSlider, {
                 speed: 900,
                 spaceBetween: 10,
@@ -565,7 +565,7 @@
                         spaceBetween: 16,
                         slidesPerView: 4
                     },
-                    992: {
+                    1025: {
                         spaceBetween: 16,
                         slidesPerView: 3
                     }
@@ -666,19 +666,28 @@
     function spollers() {
         const spollers = document.querySelectorAll("[data-spoller]");
         if (spollers.length) {
+            let timeSlide = 300;
             spollers.forEach(spoller => {
                 const buttons = spoller.querySelectorAll("[data-spoller-btn]");
                 const body = spoller.querySelector("[data-spoller-body]");
-                slideUp(body, 0);
+                if (!spoller.classList.contains("_active")) {
+                    slideUp(body, 0);
+                }
                 buttons.forEach(btn => {
+                    let isSlide = false;
                     btn.addEventListener("click", () => {
+                        if (isSlide) return;
+                        isSlide = true;
                         if (spoller.classList.contains("_active")) {
                             spoller.classList.remove("_active");
-                            slideUp(body);
+                            slideUp(body, timeSlide);
                         } else {
                             spoller.classList.add("_active");
-                            slideDown(body);
+                            slideDown(body, timeSlide);
                         }
+                        setTimeout(() => {
+                            isSlide = false;
+                        }, timeSlide);
                     });
                 });
             });

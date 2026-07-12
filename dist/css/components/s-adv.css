@@ -1,3 +1,7 @@
+.s-adv__title {
+  user-select: none;
+}
+
 .s-adv__content {
   max-width: 1100px;
   margin: 10px 0px 0px 0px;
@@ -104,7 +108,7 @@
   }
 
   .s-adv__item .item-content {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .s-adv__item-simple {

@@ -72,6 +72,7 @@
   left: 0;
   right: 0;
   border-radius: 20px;
+  overflow: visible;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   transition: bacdrop-filter 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, margin 0.3s ease, border-radius 0.3s ease;
@@ -262,7 +263,7 @@
 }
 
 .header__drop-item .item-content {
-  font-size: 22px;
+  font-size: 19px;
   line-height: 140%;
   margin: 10px 0px 0px 0px;
   color: var(--dark-4);
@@ -289,7 +290,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1025px) {
   .header__burger-btn {
     display: none;
   }
@@ -348,7 +349,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .header._fill,
   .header._scroll {
     padding: 10px 0px;
@@ -408,7 +409,7 @@
   }
 }
 
-@media (max-width: 1199px) and (min-width: 992px) {
+@media (max-width: 1199px) and (min-width: 1025px) {
   .header__logo-descr {
     display: none;
   }

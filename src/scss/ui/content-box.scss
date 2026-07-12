@@ -1,8 +1,20 @@
+@use '../base/templates' as *;
+@use '../base/media' as *;
+
 .content-box {
   & > * {
     margin: 0;
     &:not(:last-child) {
       margin-bottom: 0.5em;
+    }
+  }
+
+  a {
+    color: var(--primary);
+    text-decoration: underline;
+
+    @include hover {
+      text-decoration: none;
     }
   }
 }

@@ -165,7 +165,7 @@
 }
 
 .s-product__spec-wrap {
-  margin-top: 5px;
+  margin-top: 50px;
 }
 
 @media (min-width: 769px) {
@@ -219,7 +219,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .s-product__list li .item-name {
     flex-basis: 360px;
   }

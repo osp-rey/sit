@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="./files/favicon.svg" />
+<link rel="stylesheet" href="./files/fancybox/fancybox.min.css" />
+<link rel="stylesheet" href="./files/swiper/swiper.min.css" />
+<link rel="stylesheet" href="./css/main.css?ver=mri93cbq" />
+<title>OSPREY</title>
+
+</head>
+<body class="body">
+
+  <header class="header">
+  <div class="header__main">
+    <div class="g-wrap header__inside">
+      <div class="container">
+        <div class="header__inside-wrap">
+          <div class="header__wrapper">
+            <div class="header__logo-wrap">
+              <a href="/" class="header__logo">
+                <img src="img/logo.svg" alt="image" class="logo-primary" />
+                <img src="img/logo-dark.svg" alt="image" class="logo-dark" />
+              </a>
+              <div class="header__logo-descr">
+                Производство пресс-форм с доставкой по РФ
+              </div>
+            </div>
+            <nav class="header__nav">
+              <div data-header-drop-btn="services" class="header__services-btn">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-burger"></use>
+                </svg>
+                <span>Услуги</span>
+              </div>
+              <ul class="list header__list">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Продукция</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header__contacts">
+              <a href="mailto:info@cncgroup.ru" class="header__social-btn _mail">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-mail"></use>
+                </svg>
+                <span>info@cncgroup.ru</span>
+              </a>
+              <a
+                href="#"
+                rel="nofollow"
+                target="_blank"
+                class="header__social-btn _max"
+              >
+                <img src="img/max.png" alt="icon" />
+                <span>MAX</span>
+              </a>
+              <div class="header__contacts-main">
+                <a href="tel:+74957870000" class="header__tel">
+                  +7 (495) 787 00 00
+                </a>
+                <div class="header__address">Пн–пт с 9 до 18</div>
+              </div>
+              <a href="#modal-feedback" data-fancybox class="btn-b header__btn">
+                Заказать звонок
+              </a>
+              <a href="#modal-feedback" data-fancybox class="header__tel-mob">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-connect"></use>
+                </svg>
+              </a>
+              <div class="header__burger-btn" id="burger-toggle">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-burger"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="header__drop" hidden data-header-drop="services">
+            <div class="header__drop-grid">
+              <a href="#" class="header__drop-item">
+                <img src="img/header-drop.png" alt="logo" class="item-img" />
+                <div class="item-body">
+                  <div class="item-title">Пресс-формы</div>
+                  <p class="item-content">
+                    Проектирование и изготовление оснастки под литьё и выдув
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="header__drop-item">
+                <img src="img/header-drop-2.png" alt="logo" class="item-img" />
+                <div class="item-body">
+                  <div class="item-title">Литьё на ТПА</div>
+                  <p class="item-content">
+                    Серийное литьё пластмасс: режимы, качество, упаковка
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="header__drop-item">
+                <img src="img/header-drop-3.png" alt="logo" class="item-img" />
+                <div class="item-body">
+                  <div class="item-title">Формы для выдува</div>
+                  <p class="item-content">
+                    Оснастка для экструзионного выдува: ресурс, стабильность
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="header__drop-item">
+                <img src="img/header-drop-4.png" alt="logo" class="item-img" />
+                <div class="item-body">
+                  <div class="item-title">Выдув на экструдере</div>
+                  <p class="item-content">
+                    Экструзионно выдувное формование изделий и тары
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<aside class="header-drop-backdrop"></aside>
+
+  <aside class="burger" id="burger">
+  <div class="burger__services">
+    <a href="#" class="burger__service-item">
+      <img src="img/header-drop.png" alt="image" />
+      <div class="item-name">Пресс-формы</div>
+    </a>
+    <a href="#" class="burger__service-item">
+      <img src="img/header-drop-2.png" alt="image" />
+      <div class="item-name">Литьё на ТПА</div>
+    </a>
+    <a href="#" class="burger__service-item">
+      <img src="img/header-drop-3.png" alt="image" />
+      <div class="item-name">
+        Формы
+        <br />
+        для выдува
+      </div>
+    </a>
+    <a href="#" class="burger__service-item">
+      <img src="img/header-drop-4.png" alt="image" />
+      <div class="item-name">Выдув на экструдере</div>
+    </a>
+  </div>
+  <ul class="list burger__list">
+    <li><a href="#">О компании</a></li>
+    <li><a href="#">Продукция</a></li>
+    <li><a href="#">Контакты</a></li>
+    <li class="social">
+      <a href="tel:+74957870000">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+        </svg>
+        <span>+7 (495) 787 00 00</span>
+      </a>
+    </li>
+    <li class="social">
+      <a href="mailto:info@cncgroup.ru">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-mail"></use>
+        </svg>
+        <span>info@cncgroup.ru</span>
+      </a>
+    </li>
+    <li class="social">
+      <a href="#" target="_blank" rel="nofollow">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#icon-max"></use>
+        </svg>
+        <span>MAX</span>
+      </a>
+    </li>
+  </ul>
+</aside>
+
+  <aside>
+  <div class="modal" id="modal-feedback">
+    <div data-fancybox-close class="modal__close">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#icon-close"></use>
+      </svg>
+    </div>
+    <div class="modal__body">
+      <div class="modal__head">
+        <div class="modal__title">Заказать звонок</div>
+        <p class="modal__content">
+          Оставьте контакты — менеджер перезвонит, чтобы ответить на ваши
+          вопросы
+        </p>
+      </div>
+      <form action="#" class="modal__form">
+        <div class="form-control">
+          <input
+            type="text"
+            placeholder="Ваше имя"
+            id="modal-feedback-name"
+            required
+            class="input"
+          />
+        </div>
+        <div class="form-control">
+          <input
+            type="tel"
+            placeholder="Телефон"
+            id="modal-feedback-tel"
+            required
+            class="input"
+          />
+        </div>
+        <button type="submit" class="btn-s">Оставить заявку</button>
+        <div class="check-wrap">
+          <input type="checkbox" id="modal-feedback-policy" />
+          <label for="modal-feedback-policy">
+            <span>
+              Я даю согласие ООО «СНСГРУПП» на обработку моих
+              <a href="#" target="_blank">персональных данных</a>
+              в целях обработки обращения, обратного звонка и предоставления
+              консультации в соответствии с
+              <a href="#" target="_blank">
+                Политикой обработки персональных данных
+              </a>
+              .
+            </span>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</aside>
+
+  
+  <main>
+    <section class="s-static sect-m">
+  <div class="g-wrap">
+    <div class="container">
+      <div class="sect-head">
+        <h1 class="s-title">Политика конфиденциальности</h1>
+      </div>
+      <div class="content-box">
+        <div class="content col">
+          <h2>
+            <strong>
+              Обратите внимание на порядок использования образца Политики
+              конфиденциальности перед размещением на своем сайте!
+            </strong>
+          </h2>
+          <p>
+            <strong>Образец Политики конфиденциальности</strong>
+            может быть свободно использован полностью или в любой его части, в
+            том числе переработан
+            <strong>
+              при условии размещения непосредственно под его текстом подписи с
+              указанием источника заимствования и активной гипертекстовой ссылки
+              на сайт www.it-lex.ru следующего вида
+            </strong>
+            :
+            <em>
+              Шаблон Политики конфиденциальности разработала &lt;a
+              href="http://it-lex.ru" target="_blank" title="Составить политику
+              конфиденциальности для сайта"&gt;
+              <a href="/">Юридическая компания АйТи-Лекс</a>
+            </em>
+          </p>
+          <p><em></em></p>
+          <div class="info">
+            <em>
+              Образец Политики конфиденциальности разработан для лендингов и
+              сайтов
+            </em>
+            с простой формой обратной связи. Политика также может подойти сайтам
+            с формой подписки на новостные рассылки. Для
+            <em>интернет-магазина</em>
+            или
+            <em>доски объявлений</em>
+            с сложными формами регистрации рекомендуем использовать полную
+            версию
+            <em>Политики конфиденциальности</em>
+            , которая регулирует вопросы обработки пользовательских персональных
+            данных.
+          </div>
+          <p></p>
+          <p>
+            Настоящий документ «Политика конфиденциальности» (далее по тексту –
+            «Политика») представляет собой правила использования /указать
+            владельца сайта/ (далее – «мы» и/или «Администрация») данных
+            интернет-пользователей (далее «вы» и/или «Пользователь»), собираемых
+            с использованием сайта / указать URL сайта/ (далее – «Сайт»).
+          </p>
+          <h2>1. Обрабатываемые данные</h2>
+          <p>
+            1.1. Мы не осуществляем сбор ваших
+            <a
+              href="/usloviya_ispolzovaniya_servisa/obrazec-politiki-konfidencialnosti-2017"
+            >
+              персональных данных
+            </a>
+            с использованием Сайта.
+          </p>
+          <p>
+            1.2. Все данные, собираемые на Сайте, предоставляются и принимаются
+            в обезличенной форме (далее – «Обезличенные данные»).
+          </p>
+          <p>
+            1.3. Обезличенные данные включают следующие сведения, которые не
+            позволяют вас идентифицировать:
+          </p>
+          <p>
+            1.3.1. Информацию, которую вы предоставляете о себе самостоятельно с
+            использованием онлайн-форм и программных модулей Сайта, включающие
+            номер телефона и/или адрес электронной почты.
+          </p>
+          <p>
+            1.3.2. Данные, которые передаются в обезличенном виде в
+            автоматическом режиме в зависимости от настроек используемого вами
+            программного обеспечения.
+          </p>
+          <p>
+            1.4. Администрация вправе устанавливать требования к составу
+            Обезличенных данных Пользователя, которые собираются использованием
+            Сайта.
+          </p>
+          <p>
+            1.5. Если определенная информация не помечена как обязательная, ее
+            предоставление или раскрытие осуществляется Пользователем на свое
+            усмотрение. Одновременно вы даете информированное согласие на доступ
+            неограниченного круга лиц к таким данным. Указанные данные
+            становится общедоступными с момента предоставления и/или раскрытия в
+            иной форме.
+          </p>
+          <p>
+            1.6. Администрация не осуществляет проверку достоверности
+            предоставляемых данных и наличия у Пользователя необходимого
+            согласия на их обработку в соответствии с настоящей Политикой,
+            полагая, что Пользователь действует добросовестно, осмотрительно и
+            прилагает все необходимые усилия к поддержанию такой информации в
+            актуальном состоянии и получению всех необходимых согласий на ее
+            использование.
+          </p>
+          <p>
+            1.7. Вы осознаете и принимаете возможность использования на Сайте
+            программного обеспечения третьих лиц, в результате чего такие лица
+            могут получать и передавать указанные в п.1.3 данные в обезличенном
+            виде.
+          </p>
+          <p></p>
+          <div class="info">
+            <strong>Пример!</strong>
+            К указанному программному обеспечению третьих лиц относятся системы
+            сбора статистики посещений Google Analytics и Яндекс.Метрика.
+          </div>
+          <p></p>
+          <p>
+            1.8. Состав и условия сбора обезличенных данных с использованием
+            программного обеспечения третьих лиц определяются непосредственно их
+            правообладателями и могут включать:
+          </p>
+          <ul>
+            <li>данные браузера (тип, версия, cookie);</li>
+            <li>данные устройства и место его положения;</li>
+            <li>
+              данные операционной системы (тип, версия, разрешение экрана);
+            </li>
+            <li>данные запроса (время, источник перехода, IP-адрес).</li>
+          </ul>
+          <p>
+            1.9. Администрация не несет ответственность за порядок использования
+            Обезличенных данных Пользователя третьими лицами.
+          </p>
+          <div class="unit">
+            <div class="holder">Готовое решение для вашего бизнеса</div>
+            <div class="image">
+              <img src="/images/322.img" width="128" height="128" alt="" />
+            </div>
+            <div class="title">
+              <a href="/store/online-services">Пакет документов для сайта</a>
+            </div>
+            <div class="descr">
+              Документы для популярных моделей интернет-сервисов. Гарантия
+              ограничения ответственности и налоговой чистоты.
+            </div>
+            <div class="request">
+              <a href="/store/online-services">Ознакомиться с решением</a>
+            </div>
+          </div>
+          <h2>2. Цели обработки данных</h2>
+          <p>2.1. Администрация использует данные в следующих целях:</p>
+          <p>2.1.1. Обработка поступающих запросов и связи с Пользователем;</p>
+          <p>
+            2.1.2. Информационное обслуживание, включая рассылку
+            рекламно-информационных материалов;
+          </p>
+          <p>
+            2.1.3. Проведение маркетинговых, статистических и иных исследований;
+          </p>
+          <p>2.1.4. Таргетирование рекламных материалов на Сайте.</p>
+          <h2>3. Требования к защите данных</h2>
+          <p>
+            3.1. Администрация осуществляет хранение данных и обеспечивает их
+            охрану от несанкционированного доступа и распространения в
+            соответствии с внутренними правилами и регламентами.
+          </p>
+          <p>
+            3.2. В отношении полученных данных сохраняется
+            <a
+              href="/usloviya_ispolzovaniya_servisa/obrazec-politiki-konfidencialnosti-2017"
+            >
+              конфиденциальность
+            </a>
+            , за исключением случаев, когда они сделаны Пользователем
+            общедоступными, а также когда используемые на Сайте технологии и
+            программное обеспечение третьих лиц либо настройки используемого
+            Пользователем программного обеспечения предусматривают открытый
+            обмен с данными лицами и/или иными участниками и пользователями сети
+            Интернет.
+          </p>
+          <p>
+            3.3. В целях повышения качества работы Администрация вправе хранить
+            лог-файлы о действиях, совершенных Пользователем в рамках
+            использования Сайта в течение 1 (Одного) года.
+          </p>
+          <h2>4. Передача данных</h2>
+          <p>
+            4.1. Администрация вправе передать данные третьим лицам в следующих
+            случаях:
+          </p>
+          <ul>
+            <li>
+              Пользователь выразил свое согласие на такие действия, включая
+              случаи применения Пользователем настроек используемого
+              программного обеспечения, не ограничивающих предоставление
+              определенной информации;
+            </li>
+            <li>
+              Передача необходима в рамках использования Пользователем
+              функциональных возможностей Сайта;
+            </li>
+            <li>
+              Передача требуется в соответствии с целями обработки данных;
+            </li>
+            <li>
+              В связи с передачей Сайта во владение, пользование или
+              собственность такого третьего лица;
+            </li>
+            <li>
+              По запросу суда или иного уполномоченного государственного органа
+              в рамках установленной законодательством процедуры;
+            </li>
+            <li>
+              Для защиты прав и законных интересов Администрации в связи с
+              допущенными Пользователем нарушениями.
+            </li>
+          </ul>
+          <h2>5. Изменение Политики конфиденциальности</h2>
+          <p>
+            5.1. Настоящая Политика может быть изменена или прекращена
+            Администрацией в одностороннем порядке без предварительного
+            уведомления Пользователя. Новая редакция Политики вступает в силу с
+            момента ее размещения на Сайте, если иное не предусмотрено новой
+            редакцией Политики.
+          </p>
+          <p>
+            5.2. Действующая редакция Политики находится на Сайте в сети
+            Интернет по адресу
+            <a
+              href="/usloviya_ispolzovaniya_servisa/politika_konfidencialnosti"
+            >
+              http
+            </a>
+            ://__________.
+            <br />
+            Действующая редакция Политики от __________ 20__ г.
+          </p>
+          <p>
+            Политику разработала
+            <a href="/">Юридическая компания АйТи-Лекс</a>
+          </p>
+          <p></p>
+          <div class="info">
+            <strong>Обратите внимание!</strong>
+            Образец Политики конфиденциальности не подходит для сайтов с формой
+            регистрации и/или обратной связи, предусматривающими предоставление
+            помимо номера телефона и/или электронного адреса иной персональной
+            информации о пользователе. Поэтому не рекомендуем данный шаблон
+            политики конфиденциальности для интернет-магазина, доски объявлений,
+            торговой площадки и иных сайтов, обрабатывающих персональные данные
+            пользователей.
+            <br />
+            В случае обработки персональных данных, Политика конфиденциальности
+            должна быть дополнена обязательными условиями о составе, основаниях,
+            способах и целях обработки персональных данных, и получении согласия
+            субъекта персональных данных с установленными в Политике правилами.
+          </div>
+          <p></p>
+          <div class="promoline">
+            <div class="descr">
+              Хотите составить Политику конфиденциальности с учетом особенностей
+              вашего сайта?
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="query"><strong>Заинтересовала услуга?</strong></td>
+                  <td class="query"><strong>Не нашли ответа?</strong></td>
+                </tr>
+                <tr>
+                  <td class="left">
+                    <a
+                      href="/request?theme=%D0%A6%D0%B5%D0%BD%D0%B0+%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%B5%D1%86+%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B8+%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8"
+                    >
+                      Узнать цену
+                    </a>
+                  </td>
+                  <td class="right">
+                    <a
+                      href="/request?theme=%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81+%D0%BE+%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%B5%D1%86+%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B8+%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8"
+                    >
+                      Задать вопрос
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="s-services sect-m">
+  <div class="g-wrap _top-off">
+    <div class="container">
+      <div class="s-services__grid">
+        <a href="#" class="s-services__item _simple">
+          <img src="img/service-img.png" alt="image" class="item-img" />
+          <div class="item-body">
+            <div class="item-title l-title">Пресс-формы</div>
+            <div class="item-content">
+              Проектирование и изготовление оснастки под литьё и выдув
+            </div>
+          </div>
+        </a>
+        <a href="#" class="s-services__item _simple">
+          <img src="img/service-img.png" alt="image" class="item-img" />
+          <div class="item-body">
+            <div class="item-title l-title">Литьё на ТПА</div>
+            <div class="item-content">
+              Серийное литьё пластмасс: режимы, качество, упаковка
+            </div>
+          </div>
+        </a>
+        <a href="#" class="s-services__item _simple">
+          <img src="img/service-img.png" alt="image" class="item-img" />
+          <div class="item-body">
+            <div class="item-title l-title">Формы для выдува</div>
+            <div class="item-content">
+              Оснастка для экструзионного выдува: ресурс, стабильность
+            </div>
+          </div>
+        </a>
+        <a href="#" class="s-services__item _simple">
+          <img src="img/service-img.png" alt="image" class="item-img" />
+          <div class="item-body">
+            <div class="item-title l-title">Выдув на экструдере</div>
+            <div class="item-content">
+              Экструзионно выдувное формование изделий и тары
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="s-brief sect-m">
+  <div class="g-wrap bg-ghost-2">
+    <div class="container">
+      <div class="s-brief__wrapper">
+        <div class="s-brief__info">
+          <h2 class="s-title s-brief__title">
+            Опишите задачу — мы уточним ТЗ
+            <br />
+            и
+            <span>предложим решение</span>
+          </h2>
+          <p class="text-b s-brief__content">
+            Можно приложить чертёж, 3D, фото образца или спецификацию. Если
+            данных пока мало — напишите, что есть: назначение изделия, материал,
+            тираж, требования к поверхности/прочности.
+          </p>
+          <div class="s-brief__adv">
+            <div class="s-brief__adv-item">
+              <img src="img/check-fill.png" alt="image" class="item-icon" />
+              <div class="item-text">
+                Предложим лучшие
+                <br />
+                условия на рынке
+              </div>
+            </div>
+            <div class="s-brief__adv-item">
+              <img src="img/two-play.png" alt="image" class="item-icon" />
+              <div class="item-text">
+                Обеспечим полное сопровождение
+                <br />
+                от начала проекта до выхода в тираж
+              </div>
+            </div>
+          </div>
+        </div>
+        <form action="#" class="s-brief__form">
+          <div class="form-grid">
+            <div class="form-control">
+              <input
+                type="text"
+                placeholder="Ваше имя"
+                id="brief-name"
+                class="input"
+              />
+            </div>
+            <div class="form-control">
+              <input
+                type="tel"
+                placeholder="Телефон"
+                id="brief-tel"
+                class="input"
+              />
+            </div>
+            <div class="form-control">
+              <input
+                type="email"
+                placeholder="Эл. почта"
+                id="brief-mail"
+                class="input"
+              />
+            </div>
+            <div class="form-control">
+              <input type="file" id="brief-file" class="input-file" />
+              <label for="brief-file" class="label-file">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#icon-clip"></use>
+                </svg>
+                <div class="label-file-name">
+                  Приложить файл
+                  <span>(не обязательно)</span>
+                </div>
+              </label>
+            </div>
+            <div class="form-control _full">
+              <textarea
+                rows="5"
+                placeholder="Ваше сообщение"
+                class="input"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-nav">
+            <button type="submit" class="btn-s">Оставить заявку</button>
+            <div class="check-wrap">
+              <input type="checkbox" id="brief-policy" />
+              <label for="brief-policy">
+                <span>
+                  Я даю согласие ООО «СНСГРУПП» на обработку моих
+                  <a href="#" target="_blank">персональных данных</a>
+                  в целях обработки обращения, обратного звонка и предоставления
+                  консультации в соответствии с
+                  <a href="#" target="_blank">
+                    Политикой обработки персональных данных
+                  </a>
+                  .
+                </span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+  <div class="g-wrap">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__main">
+          <a href="/" class="footer__logo">
+            <img src="img/logo-white.svg" alt="logo" />
+          </a>
+          <p class="footer__main-content">
+            Производство пресс-форм с доставкой по РФ
+          </p>
+          <ul data-da=".footer__wrapper, 991" class="list footer__main-list">
+            <li><a href="#" target="_blank">Политика конфиденциальности</a></li>
+            <li>
+              <a href="#" target="_blank">Обработка персональных данных</a>
+            </li>
+            <li><span>© 2026 ООО «СНСГРУПП». Все права защищены</span></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <div class="footer__nav-title">Услуги</div>
+          <ul class="list footer__nav-list">
+            <li><a href="#">Пресс-формы</a></li>
+            <li><a href="#">Литьё на ТПА</a></li>
+            <li><a href="#">Выдув на экструдере</a></li>
+            <li><a href="#">Формы для выдува</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <div class="footer__nav-title">Меню</div>
+          <ul class="list footer__nav-list">
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Продукция</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <a href="mailto:info@cncgroup.ru" class="footer__contacts-btn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-mail-fill"></use>
+            </svg>
+            <span>info@cncgroup.ru</span>
+          </a>
+          <a href="#" target="_blank" class="footer__contacts-btn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-max"></use>
+            </svg>
+            <span>MAX</span>
+          </a>
+          <a
+            href="tel:+74957870000"
+            target="_blank"
+            class="footer__contacts-btn"
+          >
+            <span>+7 (495) 787 00 00</span>
+          </a>
+          <div class="footer__work-time">Пн–пт с 9 до 18</div>
+          <a
+            href="#modal-feedback"
+            data-fancybox
+            class="btn-s _white footer__connect-btn"
+          >
+            Заказать звонок
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./files/fancybox/fancybox.min.js"></script>
+<script src="./files/swiper/swiper.min.js"></script>
+<script src="./files/inputmask/inputmask.min.js"></script>
+<script src="./files/just-validate/just-validate.min.js"></script>
+
+  
+  <script src="./js/app.js?ver=mri93cbq"></script>
+</body>
+</html>

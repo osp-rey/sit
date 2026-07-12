@@ -151,7 +151,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .s-data__item {
     padding: 40px 30px;
   }

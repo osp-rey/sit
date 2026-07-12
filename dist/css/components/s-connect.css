@@ -58,7 +58,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .s-connect__gallery {
     display: none;
   }

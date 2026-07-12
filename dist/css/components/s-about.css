@@ -1,7 +1,7 @@
 .s-about__wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 25px;
 }
 
 .s-about__wrapper._simple {
@@ -104,6 +104,12 @@
   }
 }
 
+@media (min-width: 1366px) {
+  .s-about__title {
+    letter-spacing: -0.05em;
+  }
+}
+
 @media (max-width: 1539px) {
   .s-about__content {
     font-size: 24px;
@@ -156,6 +162,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .s-about__gallery {
+    margin-top: 30px;
+  }
+}
+
 @media (max-width: 768px) {
   .s-about__content {
     font-size: 15px;
@@ -176,10 +188,6 @@
 
   .s-about__steps .item-text {
     font-size: 15px;
-  }
-
-  .s-about__gallery {
-    margin-top: 30px;
   }
 
   .s-about__gallery .slider-nav {

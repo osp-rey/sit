@@ -2,9 +2,6 @@
 @use "../base/media" as *;
 
 .s-faq {
-  &__wrap {
-    padding-top: 0 !important;
-  }
   &__wrapper {
     display: flex;
     align-items: start;
@@ -44,14 +41,11 @@
     }
   }
   &__spoller {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    padding: 20px;
     border-radius: 15px;
     background-color: var(--ghost-2);
     border: 1px solid var(--ghost-2);
     gap: 30px;
+    cursor: pointer;
 
     transition:
       border-color 0.3s ease,
@@ -63,24 +57,18 @@
 
       .s-faq__spoller-btn {
         padding-top: 0;
-
       }
       .rect {
         background-color: var(--ghost-2);
         color: var(--dark-4);
 
         &::before {
-          transform: rotate(0deg)
+          transform: rotate(0deg);
         }
       }
     }
-
-    @include laptop-min {
-      padding: 15px;
-    }
     @include tablet {
       border-radius: 10px;
-      gap: 15px;
     }
 
     .rect {
@@ -131,6 +119,19 @@
       }
     }
   }
+  &__spoller-inside {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 20px;
+
+    @include laptop-min {
+      padding: 15px;
+    }
+    @include tablet {
+      gap: 15px;
+    }
+  }
   &__spoller-main {
     flex: 0 1 705px;
   }
@@ -138,8 +139,8 @@
     cursor: pointer;
     user-select: none;
     padding: 10px 0px;
-    
-    transition: padding .3s ease;
+
+    transition: padding 0.3s ease;
     @include laptop-min {
       padding: 5px 0px;
     }

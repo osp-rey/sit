@@ -68,6 +68,7 @@
     left: 0;
     right: 0;
     border-radius: 20px;
+    overflow: visible;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     transition:
@@ -140,7 +141,7 @@
     letter-spacing: -0.03em;
     transform: translateY(5px);
 
-    @media (max-width: 1199px) and (min-width: 992px) {
+    @media (max-width: 1199px) and (min-width: 1025px) {
       display: none;
     }
     @include tablet {
@@ -315,7 +316,7 @@
     @include hover {
       color: var(--primary);
     }
-    @media (min-width: 992px) {
+    @media (min-width: 1025px) {
       display: none;
     }
 
@@ -371,7 +372,7 @@
       }
     }
     .item-content {
-      font-size: 22px;
+      font-size: 19px;
       line-height: 140%;
       margin: 10px 0px 0px 0px;
       color: var(--dark-4);

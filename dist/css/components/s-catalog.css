@@ -29,7 +29,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .s-catalog .g-wrap {
     overflow: visible;
   }

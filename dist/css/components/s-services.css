@@ -140,6 +140,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .s-services__item .item-content {
+    max-width: 230px;
+  }
+}
+
 @media (any-hover: hover) {
   .s-services__item:hover::before {
     opacity: 1;

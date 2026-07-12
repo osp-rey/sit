@@ -5,3 +5,20 @@
 .content-box > *:not(:last-child) {
   margin-bottom: 0.5em;
 }
+
+.content-box a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+@media (any-hover: hover) {
+  .content-box a:hover {
+    text-decoration: none;
+  }
+}
+
+@media (hover: none) {
+  .content-box a:active {
+    text-decoration: none;
+  }
+}

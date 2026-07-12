@@ -84,9 +84,6 @@
       margin: 10px 0px 0px 0px;
       color: var(--dark-4);
       transition: color 0.3s ease;
-      @include tablet-min {
-        font-size: 13px;
-      }
     }
   }
 }

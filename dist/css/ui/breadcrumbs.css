@@ -16,8 +16,8 @@
   --color: var(--white-4);
   --background-h: var(--dark-6);
   --color-h: white;
-  --color-d: var(--white-3);
-  --background-d: var(--dark-4);
+  --color-d: var(--white-2);
+  --background-d: var(--dark-3);
   backdrop-filter: blur(10px);
 }
 
@@ -37,7 +37,7 @@
   --color: var(--dark-6);
   --background-h: var(--dark-3);
   --color-h: var(--dark);
-  --color-d: var(--dark);
+  --color-d: var(--dark-4);
   --background-d: var(--dark-1);
   display: flex;
   align-items: center;

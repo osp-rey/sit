@@ -12,6 +12,7 @@
   --ghost: #f7f8f9;
   --ghost-2: #f6f7f8;
   --white-1: rgba(255, 255, 255, 0.1);
+  --white-2: rgba(255, 255, 255, 0.2);
   --white-3: rgba(255, 255, 255, 0.3);
   --white-4: rgba(255, 255, 255, 0.4);
   --red: #ff4000;
@@ -20,7 +21,7 @@
   --radius-l: 15px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   :root {
     --radius: 12px;
     --radius-m: 12px;

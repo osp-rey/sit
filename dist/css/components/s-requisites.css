@@ -18,7 +18,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .s-requisites__grid {
     grid-template-columns: 1fr;
     gap: 15px;

@@ -3,7 +3,7 @@
   width: auto !important;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .row-nav {
     overflow: visible !important;
   }
