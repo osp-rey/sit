@@ -52,7 +52,7 @@
   margin-top: 25px;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1026px) {
   .s-products__slider-nav .swiper-wrapper {
     flex-wrap: wrap;
     gap: 6px;
@@ -63,7 +63,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .s-products__nav {
     margin-top: 25px;
   }

@@ -20,7 +20,7 @@
   color: var(--primary);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1026px) {
   .s-notfound__wrap {
     padding-top: 20px !important;
   }

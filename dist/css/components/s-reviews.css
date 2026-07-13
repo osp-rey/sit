@@ -77,7 +77,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .s-reviews__head-row {
     flex-wrap: wrap;
   }
@@ -85,6 +85,10 @@
   .s-reviews__toggle {
     justify-content: space-between;
     width: 100%;
+  }
+
+  .s-reviews__btn-consult {
+    display: none;
   }
 }
 
@@ -99,10 +103,6 @@
 
   .s-reviews__service .service-stars img {
     width: 16px;
-  }
-
-  .s-reviews__btn-consult {
-    display: none;
   }
 }
 

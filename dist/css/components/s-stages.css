@@ -96,7 +96,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .s-stages__grid {
     grid-template-columns: 1fr;
     gap: 20px;

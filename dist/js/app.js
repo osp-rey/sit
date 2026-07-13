@@ -493,7 +493,7 @@
             });
         }
         const productsNavSliders = document.querySelectorAll(".s-products__slider-nav");
-        if (productsNavSliders.length && window.matchMedia("(max-width: 1024px)").matches) {
+        if (productsNavSliders.length && window.matchMedia("(max-width: 1025px)").matches) {
             productsNavSliders.forEach(slider => {
                 const swiper = new Swiper(slider, {
                     speed: 900,

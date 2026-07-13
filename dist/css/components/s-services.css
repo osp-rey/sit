@@ -42,7 +42,7 @@
 }
 
 .s-services__item .item-content {
-  font-size: 22px;
+  font-size: 19px;
   line-height: 140%;
   margin-top: 10px;
   color: var(--dark-6);
@@ -76,10 +76,6 @@
 
   .s-services__item .item-img {
     width: 400px;
-  }
-
-  .s-services__item .item-content {
-    font-size: 20px;
   }
 }
 

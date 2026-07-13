@@ -32,7 +32,7 @@ export default function sliders() {
 
   if (
     productsNavSliders.length &&
-    window.matchMedia("(max-width: 1024px)").matches
+    window.matchMedia("(max-width: 1025px)").matches
   ) {
     productsNavSliders.forEach((slider) => {
       const swiper = new Swiper(slider, {

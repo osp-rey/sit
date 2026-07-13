@@ -103,7 +103,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .s-brief__wrapper {
     gap: 30px;
   }

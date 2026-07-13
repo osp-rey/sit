@@ -88,9 +88,6 @@
     @include laptop-min {
       padding: 10px 0px 18px 0px;
     }
-    // @include tablet-min {
-    //   padding: 8px 0px;
-    // }
   }
   &__wrapper {
     display: flex;
@@ -141,7 +138,7 @@
     letter-spacing: -0.03em;
     transform: translateY(5px);
 
-    @media (max-width: 1199px) and (min-width: 1025px) {
+    @media (max-width: 1199px) and (min-width: 1026px) {
       display: none;
     }
     @include tablet {
@@ -316,7 +313,7 @@
     @include hover {
       color: var(--primary);
     }
-    @media (min-width: 1025px) {
+    @media (min-width: 1026px) {
       display: none;
     }
 
@@ -342,6 +339,9 @@
     .item-img {
       display: block;
       width: 235px;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+      object-position: top left;
     }
     .item-body {
       margin-top: 20px;

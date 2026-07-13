@@ -22,6 +22,14 @@
     font-size: 15px;
   }
 }
+.text-s {
+  font-size: 19px;
+  line-height: 130%;
+  letter-spacing: -0.03em;
+  @include tablet {
+    font-size: 15px;
+  }
+}
 .text-l {
   font-size: 20px;
   line-height: 130%;

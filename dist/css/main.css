@@ -1109,6 +1109,12 @@ textarea.input {
   letter-spacing: -0.03em;
 }
 
+.text-s {
+  font-size: 19px;
+  line-height: 130%;
+  letter-spacing: -0.03em;
+}
+
 .text-l {
   font-size: 20px;
   line-height: 130%;
@@ -1133,7 +1139,7 @@ textarea.input {
   --color: var(--white-4);
   --background-h: var(--dark-6);
   --color-h: white;
-  --color-d: var(--white-2);
+  --color-d: var(--white-3);
   --background-d: var(--dark-3);
   backdrop-filter: blur(10px);
 }
@@ -1150,7 +1156,7 @@ textarea.input {
 }
 
 .breadrumbs-btn {
-  --background: var(--dark-1);
+  --background: var(--dark-2);
   --color: var(--dark-6);
   --background-h: var(--dark-3);
   --color-h: var(--dark);
@@ -1436,6 +1442,9 @@ div.breadrumbs-btn {
 .header__drop-item .item-img {
   display: block;
   width: 235px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  object-position: top left;
 }
 
 .header__drop-item .item-body {
@@ -1702,7 +1711,7 @@ div.breadrumbs-btn {
 }
 
 .s-services__item .item-content {
-  font-size: 22px;
+  font-size: 19px;
   line-height: 140%;
   margin-top: 10px;
   color: var(--dark-6);
@@ -3214,7 +3223,7 @@ div.breadrumbs-btn {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1026px) {
   .header__burger-btn {
     display: none;
   }
@@ -3450,10 +3459,6 @@ div.breadrumbs-btn {
 
   .s-services__item .item-img {
     width: 400px;
-  }
-
-  .s-services__item .item-content {
-    font-size: 20px;
   }
 
   .s-about__content {
@@ -3753,7 +3758,7 @@ div.breadrumbs-btn {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   :root {
     --radius: 12px;
     --radius-m: 12px;
@@ -3850,6 +3855,10 @@ div.breadrumbs-btn {
   .s-reviews__toggle {
     justify-content: space-between;
     width: 100%;
+  }
+
+  .s-reviews__btn-consult {
+    display: none;
   }
 
   .s-steps__grid {
@@ -4161,6 +4170,10 @@ div.breadrumbs-btn {
     font-size: 15px;
   }
 
+  .text-s {
+    font-size: 15px;
+  }
+
   .text-l {
     font-size: 17px;
   }
@@ -4332,10 +4345,6 @@ div.breadrumbs-btn {
 
   .s-reviews__service .service-stars img {
     width: 16px;
-  }
-
-  .s-reviews__btn-consult {
-    display: none;
   }
 
   .s-steps__item {
@@ -5102,7 +5111,7 @@ div.breadrumbs-btn {
   }
 }
 
-@media (max-width: 1199px) and (min-width: 1025px) {
+@media (max-width: 1199px) and (min-width: 1026px) {
   .header__logo-descr {
     display: none;
   }

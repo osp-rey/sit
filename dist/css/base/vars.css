@@ -21,7 +21,7 @@
   --radius-l: 15px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   :root {
     --radius: 12px;
     --radius-m: 12px;

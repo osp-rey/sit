@@ -111,13 +111,10 @@
     .item-title {
     }
     .item-content {
-      font-size: 22px;
+      font-size: 19px;
       line-height: 140%;
       margin-top: 10px;
       color: var(--dark-6);
-      @include laptop {
-        font-size: 20px;
-      }
       @include tablet {
         font-size: 17px;
         margin-top: 8px;

@@ -246,6 +246,9 @@
 .header__drop-item .item-img {
   display: block;
   width: 235px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  object-position: top left;
 }
 
 .header__drop-item .item-body {
@@ -290,7 +293,7 @@
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1026px) {
   .header__burger-btn {
     display: none;
   }
@@ -349,7 +352,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .header._fill,
   .header._scroll {
     padding: 10px 0px;
@@ -409,7 +412,7 @@
   }
 }
 
-@media (max-width: 1199px) and (min-width: 1025px) {
+@media (max-width: 1199px) and (min-width: 1026px) {
   .header__logo-descr {
     display: none;
   }

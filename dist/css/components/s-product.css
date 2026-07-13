@@ -219,7 +219,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .s-product__list li .item-name {
     flex-basis: 360px;
   }

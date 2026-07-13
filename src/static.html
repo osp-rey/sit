@@ -10,6 +10,23 @@
   @@include("components/modals.html")
   
   <main>
+    <div class="breadcrumbs">
+      <div class="g-wrap breadcrumbs-wrap">
+        <div class="container">
+          <div class="breadcrumbs-row">
+            <a href="/" class="breadrumbs-btn">
+              <span>Главная</span>
+              <svg class="arrow">
+                <use xlink:href='img/icons/icons.svg#icon-next'></use>
+              </svg>
+            </a>
+            <div class="breadrumbs-btn">
+              <span>Политика конфиденциальности</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     @@include("components/s-static.html")
     @@include("components/repeat/s-services-transparent.html")
     @@include("components/s-brief.html")

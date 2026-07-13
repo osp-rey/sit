@@ -60,7 +60,7 @@
   margin: 5px auto 0px auto;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1026px) {
   .s-contacts__map-wrap {
     display: none;
   }
@@ -72,7 +72,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .s-contacts__info {
     flex: auto;
     width: 100%;
