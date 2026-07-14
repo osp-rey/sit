@@ -53,7 +53,9 @@
 }
 
 .header._fill .header__social-btn img,
-.header._scroll .header__social-btn img {
+.header._fill .header__social-btn svg,
+.header._scroll .header__social-btn img,
+.header._scroll .header__social-btn svg {
   filter: brightness(0%);
   opacity: 0.5;
 }
