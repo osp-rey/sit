@@ -137,6 +137,9 @@
   color: var(--color);
   z-index: 1;
 
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+
   transition:
     color 0.3s ease,
     background-color 0.3s ease,
