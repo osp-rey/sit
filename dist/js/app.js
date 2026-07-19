@@ -33,6 +33,14 @@
             updateHeightBurger();
         }
     }
+    function disabledButtonsDraggable() {
+        const buttons = document.querySelectorAll(".btn-s");
+        if (buttons.length) {
+            buttons.forEach(btn => {
+                btn.setAttribute("draggable", false);
+            });
+        }
+    }
     function formValid() {
         const modalFeedbackForm = document.querySelector("#modal-feedback .modal__form");
         if (modalFeedbackForm) {
@@ -742,6 +750,7 @@
         spollers();
         inputFiles();
         map();
+        disabledButtonsDraggable();
         Fancybox.bind("[data-fancybox]", {
             closeButton: false
         });

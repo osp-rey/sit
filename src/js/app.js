@@ -1,4 +1,5 @@
 import burger from "./functions/burger.js";
+import disabledButtonsDraggable from "./functions/disabledButtonsDraggable.js";
 import formValid from "./functions/formValid.js";
 import headerDrop from "./functions/headerDrop.js";
 import headerHeight from "./functions/headerHeight.js";
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   spollers();
   inputFiles();
   map();
+  disabledButtonsDraggable();
 
   Fancybox.bind("[data-fancybox]", { closeButton: false });
   // Fancybox.show([{ src: "#modal-feedback", type: "inline" }], {
