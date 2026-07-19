@@ -587,6 +587,10 @@ img {
   gap: 5px;
   box-shadow: var(--shadow);
   width: fit-content;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
   user-select: none;
   text-align: center;
   font-weight: 600;
