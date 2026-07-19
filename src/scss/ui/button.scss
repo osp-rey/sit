@@ -189,6 +189,10 @@
     --background-h: transparent;
     --color-h: white;
     --shadow: none;
+    --shadow-h: none;
+    &::before {
+      display: none;
+    }
   }
   &._outline {
     --border: var(--dark-2);
@@ -198,6 +202,10 @@
     --background-h: transparent;
     --color-h: var(--primary);
     --shadow: none;
+    --shadow-h: none;
+    &::before {
+      display: none;
+    }
   }
   &._white {
     --border: white;
@@ -207,6 +215,10 @@
     --background-h: var(--primary);
     --color-h: white;
     --shadow: none;
+    --shadow-h: none;
+    &::before {
+      display: none;
+    }
   }
   &._ghost {
     --border: var(--ghost);
@@ -216,6 +228,11 @@
     --background-h: var(--dark);
     --color-h: white;
     --shadow: none;
+    --shadow-h: none;
+
+    &::before {
+      display: none;
+    }
   }
 
   @include tablet {

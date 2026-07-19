@@ -138,6 +138,11 @@
   --background-h: transparent;
   --color-h: white;
   --shadow: none;
+  --shadow-h: none;
+}
+
+.btn-s._outline-white::before {
+  display: none;
 }
 
 .btn-s._outline {
@@ -148,6 +153,11 @@
   --background-h: transparent;
   --color-h: var(--primary);
   --shadow: none;
+  --shadow-h: none;
+}
+
+.btn-s._outline::before {
+  display: none;
 }
 
 .btn-s._white {
@@ -158,6 +168,11 @@
   --background-h: var(--primary);
   --color-h: white;
   --shadow: none;
+  --shadow-h: none;
+}
+
+.btn-s._white::before {
+  display: none;
 }
 
 .btn-s._ghost {
@@ -168,6 +183,11 @@
   --background-h: var(--dark);
   --color-h: white;
   --shadow: none;
+  --shadow-h: none;
+}
+
+.btn-s._ghost::before {
+  display: none;
 }
 
 @media (max-width: 768px) {
